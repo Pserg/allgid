@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Fregat';
+    src: url('../../AllGid/fonts/Fregat/Fregat.eot');
+    src: local('Fregat'),
+    url('../../AllGid/fonts/Fregat/Fregat.eot?#iefix') format('embedded-opentype'),
+    url('../../AllGid/fonts/Fregat/Fregat.woff') format('woff'),
+    url('../../AllGid/fonts/Fregat/Fregat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fregat';
+    src: url('../../AllGid/fonts/Fregat/Fregat-BoldItalic.eot');
+    src: local('Fregat Bold Italic'), local('Fregat-BoldItalic'),
+    url('../../AllGid/fonts/Fregat/Fregat-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../../AllGid/fonts/Fregat/Fregat-BoldItalic.woff') format('woff'),
+    url('../../AllGid/fonts/Fregat/Fregat-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fregat';
+    src: url('../../AllGid/fonts/Fregat/Fregat-Bold.eot');
+    src: local('Fregat Bold'), local('Fregat-Bold'),
+    url('../../AllGid/fonts/Fregat/Fregat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../AllGid/fonts/Fregat/Fregat-Bold.woff') format('woff'),
+    url('../../AllGid/fonts/Fregat/Fregat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fregat';
+    src: url('../../AllGid/fonts/Fregat/Fregat-Italic.eot');
+    src: local('Fregat Italic'), local('Fregat-Italic'),
+    url('../../AllGid/fonts/Fregat/Fregat-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../../AllGid/fonts/Fregat/Fregat-Italic.woff') format('woff'),
+    url('../../AllGid/fonts/Fregat/Fregat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
