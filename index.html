@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+    <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/star-rating.min.css">
+    <link rel="stylesheet" href="css/glyphicons.css">
+
+    <link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
     <title>Домашняя</title>
     
 </head>
@@ -19,19 +24,19 @@
                 </a>
                 <ul class="nav navbar-nav">
                     <li class="nav-item active">
-                            <a class="nav-link" href="#">Подрядчики</a>
+                        <a class="nav-link" href="#">Подрядчики</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Субподрядчики</a>
+                        <a class="nav-link" href="#">Субподрядчики</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Тендеры</a>
+                        <a class="nav-link" href="#">Тендеры</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Доска объявлений</a>
+                        <a class="nav-link" href="#">Доска объявлений</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Доска объявлений</a>
+                        <a class="nav-link" href="#">Блог</a>
                     </li>
                 </ul>
                 <a href="#"><img class="img-mail" src="img/mail-icon.png" width="25px"></a>
@@ -76,7 +81,7 @@
                     <div class="form-group ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="slider"></div>
                     <input type="text" id="maxCost" value="99999999" disabled/>
                     <div class="form-group">
-                        <button type="submit" class="submit">Быстрый поиск</button>
+                        <button type="submit" class="search-mid">Быстрый поиск</button>
                     </div>
                 </form>
             </nav>
@@ -86,26 +91,125 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="block" style="background-color:white">
+                    <div class="block">
                         <img src="img/sozidant.jpg" width="177" height="177">
+                        <div class="card-block">
+                            <h6>ООО СК "ЛСС ДОМ"</h6>
+                            <hr>
+                            <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                            <a href="#" class="comment">Оставить отзыв</a>
+                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="block" style="background-color:white">
+                    <div class="block">
                         <img src="img/royal.jpg" width="177" height="177">
+                        <div class="card-block">
+                            <h6>ООО СК "ЛСС ДОМ"</h6>
+                            <hr>
+                            <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                            <a href="#" class="comment">Оставить отзыв</a>
+                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                        </div>
                     </div>    
+                </div>
+
+                <div class="col-md-6">
+                    <div class="block">
+                        <img src="img/royal.jpg" width="177" height="177">
+                        <div class="card-block">
+                            <h6>ООО СК "ЛСС ДОМ"</h6>
+                            <hr>
+                            <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                            <a href="#" class="comment">Оставить отзыв</a>
+                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="block">
+                        <img src="img/sozidant.jpg" width="177" height="177">
+                        <div class="card-block">
+                            <h6>ООО СК "ЛСС ДОМ"</h6>
+                            <hr>
+                            <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                            <a href="#" class="comment">Оставить отзыв</a>
+                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="block">
+                        <img src="img/sozidant.jpg" width="177" height="177">
+                        <div class="card-block">
+                            <h6>ООО СК "ЛСС ДОМ"</h6>
+                            <hr>
+                            <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                            <a href="#" class="comment">Оставить отзыв</a>
+                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="block">
+                        <img src="img/royal.jpg" width="177" height="177">
+                        <div class="card-block">
+                            <h6>ООО СК "ЛСС ДОМ"</h6>
+                            <hr>
+                            <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                            <a href="#" class="comment">Оставить отзыв</a>
+                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    
-    
+
+    <div class="container">
+        <div class="header-mid"><h3>СТРОИТЕЛЬНЫЙ ЖУРНАЛ</h3></div>
+        <hr class="line">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <img src="img/dom-na-glavnoy.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">ООО СК "ЛСС ДОМ"</h4>
+                        <hr class="line">
+                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань, гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/123.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script src="js/star-rating.js"></script>
+    <script src="themes/krajee-svg/theme.js"></script>
+    <script src="js/locales/ru.js"></script>
     <script type="text/javascript">
         $(function() {
             $( "#slider" ).slider({
@@ -124,6 +228,7 @@
                 }
             });
         });
+//        $("#star").rating({min:1, max:10, step:2, size:'xs', showCaption:false, showClear:false});
     </script>
 </body>
 

@@ -1,5 +1,5 @@
 /*!
- * bootstrap-star-rating v4.0.2
+ * bootstrap-star-rating v4.0.3
  * http://plugins.krajee.com/star-rating
  *
  * Author: Kartik Visweswaran
@@ -114,16 +114,17 @@
 
 .rating-sm {
     font-size: 2.5em;
+    float: right;
 }
 
 .rating-xs {
     font-size: 2em;
+    float: right;
 }
 
-.rating-xxs {
-    font-size: 1em;
+.rating-xl {
+    font-size: 4.89em;
 }
-
 
 /**
  * Clear
@@ -151,6 +152,17 @@
 /**
  * Caption
  */
+
+/* extend support to BS4 */
+.rating-container .caption .label {
+    display: inline-block;
+    padding: .25em .4em;
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
 .rating-container .caption {
     color: #999;
     display: inline-block;

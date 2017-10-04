@@ -2,44 +2,27 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    .navbar-inverse ul {
-        margin-left: -8%;
-    }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .navbar-inverse ul {
-        margin-left: -11%;
-    }
-    .form-control {
-        padding: 0!important;
-    }
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .navbar-inverse ul {
-        margin-left: -5%;
-    }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    .navbar-inverse ul {
-        margin-left: -5%;
-    }
+
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-    .map {
-        width: 88%;
-    }
 
-    .navbar-inverse ul {
-        margin-left: -5%;
-    }
 }
 
 

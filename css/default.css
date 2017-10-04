@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: Fregat, sans-serif;
+  font-family: Fregat;
   font-size: 14px; }
 
 /* For mobile phones: */
@@ -44,130 +44,168 @@
 body {
   background-color: #EDEEF0 !important; }
 
-
 .img-mail {
   margin-top: 10px;
-  margin-left: 165px;
-}
+  margin-left: 140px; }
+
 .img-profile {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .search {
-  height:25px;
+  height: 25px;
   margin-top: 7px;
+  width: 150px; }
+
+.search-mid {
+  background-color: #575757;
+  color: #FFC702;
+  border: none;
+  font-size: 1.2em;
   width: 150px;
-}
+  margin-left: 8em; }
 
 .container-mid {
   padding-right: 0px;
-  padding-left: 0px;
-}
+  padding-left: 0px; }
 
 .container-mid nav {
   background-color: #FFC702;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  height: 50px;
-}
+  height: 50px; }
 
 /* Ширина слайдера */
 #slider {
-    width: 16%;
-}
+  width: 16%; }
 
 /* Контейнер слайдера */
 .ui-slider {
-    position: relative;
-}
+  position: relative; }
 
 /* Ползунок */
 .ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    width: 14px; /* Задаем нужную ширину */
-    height: 14px; /* и высоту */
-    background: black; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
-    cursor: pointer
-}
+  position: absolute;
+  z-index: 2;
+  width: 14px;
+  /* Задаем нужную ширину */
+  height: 14px;
+  /* и высоту */
+  background: black;
+  /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+  cursor: pointer; }
+
 .ui-slider .ui-slider-range {
-    position: absolute;
-    z-index: 1;
-    font-size: .7em;
-    display: block;
-    border: 0;
-    overflow: hidden;
-}
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden; }
+
 /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
-    height: 3px; /* задаем высоту согласно дизайна */
-}
+  height: 3px;
+  /* задаем высоту согласно дизайна */ }
+
 /* позиционируем ползунки */
 .ui-slider-horizontal .ui-slider-handle {
-    top: -7px;
-    margin-left: -6px;
-}
+  top: -7px;
+  margin-left: -6px; }
+
 .ui-slider-horizontal .ui-slider-range {
-    top: 0;
-    height: 100%;
-}
+  top: 0;
+  height: 100%; }
+
 .ui-slider-horizontal .ui-slider-range-min {
-    left: 0;
-}
+  left: 0; }
+
 .ui-slider-horizontal .ui-slider-range-max {
-    right: 0;
-}
+  right: 0; }
+
 /* оформление полосы по которой ходит ползунок */
 .ui-widget-content {
-    border: 2px solid #fff;
-    background: #fff;
-}
+  border: 2px solid #fff;
+  background: #fff; }
+
 /* оформление активного участка (между двумя ползунками) */
 .ui-widget-header {
-    border: 1px solid #fff;
-    background: #fff;
-}
+  border: 1px solid #fff;
+  background: #fff; }
+
 /* скругление для полосы слайдера */
 .ui-corner-all {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
 
 #minCost {
-    margin-right: 7px;
-    font-size: 16px;
-    border: 0;
-    background-color: #ffc702;
-    text-align: right;
-    font-weight: 400;
-    width: 71px;
-}
+  margin-right: 7px;
+  font-size: 16px;
+  border: 0;
+  background-color: #ffc702;
+  text-align: right;
+  font-weight: 400;
+  width: 71px; }
 
 #maxCost {
-    margin-left: 10px;
-    margin-top: 2px;
-    border: 0;
-    background-color: #ffc702;
-    font-weight: 400;
-    font-size: 16px;
-    width: 100px;
-}
+  margin-left: 10px;
+  margin-top: 2px;
+  border: 0;
+  background-color: #ffc702;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100px; }
 
 .mid-nav-input {
-  width: 120px!important;
-  font-size: 10px;
-}
+  width: 120px !important;
+  font-size: 10px; }
 
 .main {
   margin-top: 3em;
-}
+  margin-bottom: 1.5em; }
 
 .col-md-6 {
   padding-left: 0;
-  padding-right: 0;
-}
+  padding-right: 0; }
+
+.col-md-8 {
+  padding-left: 0;
+  padding-right: 15px; }
 
 .block {
   width: 98%;
-}
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-bottom: 2em; }
+
+.block img {
+  float: left;
+  padding-right: 1.5em; }
+
+.card-text {
+  line-height: 1.1em; }
+
+p {
+  margin-bottom: 8px; }
+
+hr {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+.comment {
+  background-color: #575757;
+  color: #ffc702;
+  padding: 5px;
+  border-radius: 3px; }
+  .comment:hover {
+    color: #ffc702;
+    text-decoration: none; }
+
+.line {
+  background-color: #ffc702;
+  margin-top: -0.6em; }
+
+.card > img {
+  width: 100%; }
+
+/*# sourceMappingURL=default.css.map */
