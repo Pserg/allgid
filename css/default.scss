@@ -27,69 +27,6 @@ body {
     background-color: #EDEEF0!important;
 }
 
-.navbar {
-    border-radius: 0!important;
-    margin-bottom: 0!important;
-}
-
-.navbar-mid {
-    background-color: #FFC702;
-    width: 88%;
-    margin-left: 6%;
-    margin-right: 6%;
-    border-radius: 0 0 3px 3px !important;
-    select {
-        width: 80%;
-        height: 26px;
-    }
-}
-
-.map {
-    width: 88%!important;
-    margin-left: 6%!important;
-    margin-right: 6%!important;
-}
-
-.nav-logo {
-    margin-top: -10px;
-    margin-left: 10px !important;
-    margin-right: 100px !important;
-}
-
-.navbar-nav li {
-    margin-right: -12px;
-}
-
-.icons {
-    margin-top: -8px !important;
-    margin-bottom: -10px !important;
-    margin-right: 10px !important;
-}
-
-.form {
-    margin-top: 8px;
-}
-
-/* Кнопка поиска */
-.submit {
-    width: 100%;
-    min-height: 25px;
-    background-color: #434343;
-    color: #ffc702;
-    border: none;
-    border-radius: 3px;
-}
-
-.search {
-    input, button {
-        height: 27px;
-        margin-top: 4px;
-    }
-
-}
-
-
-
 ///////////////////slider on index page//////////////////
 /* Ширина слайдера */
 #slider {
@@ -173,6 +110,8 @@ body {
     font-size: 16px;
     width: 100px;
 }
+//Slider ends 
+
 
 .card {
     background-color: #FFFFFF;

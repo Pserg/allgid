@@ -1,23 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Домашняя</title>
-    <!--<link rel="stylesheet" href="style/reset.css">-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/star-rating.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
-    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Домашняя</title>
+    
+</head>
+<body>
+    <nav class="navbar bg-inverse navbar-dark">
+        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"></div>
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/AllGid.png" width="100px">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                            <a class="nav-link" href="#">Подрядчики</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Субподрядчики</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Тендеры</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Доска объявлений</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Доска объявлений</a>
+                    </li>
+                </ul>
+                <a href="#"><img class="img-mail" src="img/mail-icon.png" width="25px"></a>
+                <a href="#"><img class="img-profile" src="img/profile-icon.png" width="25px"></a>
+                <form class="form-inline pull-xs-right" method="GET" action="#" >
+                    <input class="form-control search" type="text" placeholder="Поиск">
+                </form>
+            </div>
+        </div>
+      </nav>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+
+    <div class="container filters-container hidden-xs-down map">
+        <div class="">
+            <div class="row">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b3b1dee0f065cfcccf89355ae00d3856c2df8f3984ad8bec80a266c1e01758f&amp;height=299&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-mid">
+            <nav class="navbar navbar-full navbar-light">
+                <form class="form-inline form" action="#" method="GET">
+                    <div class="form-group">
+                        <select class="c-select form-control mid-nav-input">
+                            <option selected>Выбрать город</option>
+                            <option value="1">Залупинск</option>
+                            <option value="2">Зажопинск</option>
+                            <option value="3">Ебалово</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="c-select form-control mid-nav-input">
+                            <option selected>Выбрать объект</option>
+                            <option value="1">Общага</option>
+                            <option value="2">Хата</option>
+                            <option value="3">Апартаменты</option>
+                            </select>
+                    </div>
+                    <input type="text" id="minCost" value="9999999" disabled/>
+                    <div class="form-group ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="slider"></div>
+                    <input type="text" id="maxCost" value="99999999" disabled/>
+                    <div class="form-group">
+                        <button type="submit" class="submit">Быстрый поиск</button>
+                    </div>
+                </form>
+            </nav>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block" style="background-color:white">
+                        <img src="img/sozidant.jpg" width="177" height="177">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="block" style="background-color:white">
+                        <img src="img/royal.jpg" width="177" height="177">
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(function() {
             $( "#slider" ).slider({
@@ -37,95 +125,6 @@
             });
         });
     </script>
-</head>
-<body>
-
-    <nav class="navbar navbar-inverse bg-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand nav-logo" href="#"><img src="img/AllGid.png" width="120" height="30"></a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="#">Подрядчики</a></li>
-                <li><a href="#">Субподрядчики</a></li>
-                <li><a href="#">Тендеры</a></li>
-                <li><a href="#">Доска объявлений</a></li>
-                <li><a href="#">Блог</a></li>
-            </ul>
-            <form class="navbar-form navbar-right">
-                <ul class="nav navbar-nav icons">
-                    <li><a href="#"><img src="img/mail-icon.png" width="25"></a></li>
-                    <li><a href="#"><img src="img/profile-icon.png" width="25"></a></li>
-                </ul>
-                <div class="input-group search">
-                    <input type="text" class="form-control" placeholder="Поиск">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </nav>
-
-    <!--<div class="container filters-container hidden-xs-down map">-->
-        <!--<div class="">-->
-            <!--<div class="row">-->
-                <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b3b1dee0f065cfcccf89355ae00d3856c2df8f3984ad8bec80a266c1e01758f&amp;height=299&amp;lang=ru_RU&amp;scroll=true"></script>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-
-    <nav class="navbar navbar-mid">
-        <div class="container">
-            <form class="form-inline form" action="#" method="GET">
-                <div class="form-group">
-                    <select class="c-select form-control">
-                        <option selected>Выбрать город</option>
-                        <option value="1">Залупинск</option>
-                        <option value="2">Зажопинск</option>
-                        <option value="3">Ебалово</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select class="c-select form-control">
-                        <option selected>Выбрать объект</option>
-                        <option value="1">Общага</option>
-                        <option value="2">Хата</option>
-                        <option value="3">Апартаменты</option>
-                        </select>
-                </div>
-                <input type="text" id="minCost" value="9999999" disabled/>
-                <div class="form-group ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="slider"></div>
-                <input type="text" id="maxCost" value="99999999" disabled/>
-                <div class="form-group">
-                    <button type="submit" class="submit">Быстрый поиск</button>
-                </div>
-            </form>
-        </div>
-    </nav>
-
-    <div class="service-container">
-        <div class="row">
-            <!--<div class="container-fluid">-->
-                <div class="cards-row">
-                    <div class="col-md-5  card">
-                        <img src="img/sozidant.jpg" width="177px" height="177px">
-
-                    </div>
-                    <div class="col-md-5 card">
-                        <img src="img/royal.jpg" width="179px" height="177px">
-                    </div>
-                </div>
-            <!--</div>-->
-        </div>
-    </div>
-
-    <!--<footer class="container-fluid text-center">-->
-        <!--<p>Footer Text</p>-->
-    <!--</footer>-->
 </body>
 
 </html>
