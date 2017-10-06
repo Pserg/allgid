@@ -44,25 +44,41 @@
 body {
   background-color: #EDEEF0 !important; }
 
+.navbar {
+  background-color: #383838; }
+
+.nav-link-my {
+  display: block;
+  padding-top: .425rem;
+  padding-bottom: .425rem;
+  color: #EAEBEE; }
+  .nav-link-my:hover {
+    color: #FFC702;
+    text-decoration: none; }
+
 .img-mail {
-  margin-top: 10px;
-  margin-left: 140px; }
+  margin-top: 0.5em; }
 
 .img-profile {
-  margin-top: 10px; }
+  margin-top: 0.5em; }
 
 .search {
   height: 25px;
-  margin-top: 7px;
-  width: 150px; }
+  margin-top: 0.3em;
+  margin-right: 2em;
+  background-color: #EAEBEE;
+  color: #000; }
 
 .search-mid {
-  background-color: #575757;
+  background-color: #3A3A3A;
   color: #FFC702;
   border: none;
   font-size: 1.2em;
-  width: 150px;
-  margin-left: 8em; }
+  width: 173px;
+  border-radius: 3px;
+  margin-left: -2em; }
+  .search-mid:hover {
+    background-color: #575757; }
 
 .container-mid {
   padding-right: 0px;
@@ -72,11 +88,12 @@ body {
   background-color: #FFC702;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  height: 50px; }
+  height: 45px; }
 
 /* Ширина слайдера */
 #slider {
-  width: 16%; }
+  width: 40%;
+  background-color: #FFC702; }
 
 /* Контейнер слайдера */
 .ui-slider {
@@ -157,22 +174,28 @@ body {
   width: 100px; }
 
 .mid-nav-input {
-  width: 120px !important;
-  font-size: 10px; }
+  width: 200px !important;
+  height: 30px;
+  font-size: 1em; }
 
 .main {
-  margin-top: 3em;
-  margin-bottom: 1.5em; }
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 .block {
-  width: 98%;
   background-color: #FFF;
   border: 1px solid lightgray;
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 .block img {
   float: left;
   padding-right: 1.5em; }
+
+.left {
+  padding-right: 5px; }
+
+.right {
+  padding-left: 5px; }
 
 .card-text {
   line-height: 1.1em; }
@@ -185,23 +208,40 @@ hr {
   margin-bottom: 0.5em; }
 
 .comment {
-  background-color: #575757;
+  background-color: #3A3A3A;
   color: #FFC702;
   padding: 5px;
   border-radius: 3px; }
   .comment:hover {
     color: #FFC702;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: #575757; }
 
 .line {
   background-color: #FFC702;
-  margin-top: -0.6em; }
+  margin-top: -0.6em;
+  margin-bottom: 1em; }
 
 .card img {
   width: 100%; }
 
 .img-gallery {
   height: 250px; }
+
+.card-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 162px; }
+
+.my-card-block {
+  padding: 10px 1.25em 10px 1.25em;
+  height: 100px; }
+
+.card {
+  margin-bottom: 1.25em; }
+
+.my-card-footer {
+  margin-top: 26px; }
 
 .footer {
   background-color: #262626;
@@ -246,5 +286,44 @@ hr {
   background-color: #FFF;
   margin-left: 8em;
   margin-top: 1em; }
+
+.company-logo {
+  position: absolute;
+  z-index: 99999;
+  top: 8.5em;
+  left: 3em; }
+
+.button {
+  background-color: #383838;
+  border-radius: 3px;
+  color: #FFC702;
+  border: none;
+  width: 150px; }
+  .button:hover {
+    background-color: #575757;
+    color: #FFC702; }
+
+ol li {
+  line-height: 1.2em; }
+
+.card-img-bottom {
+  width: 25em !important;
+  margin: 5px; }
+
+.card-block-right {
+  padding: 1.25em;
+  background-color: #3A3A3A;
+  color: #FFF; }
+  .card-block-right span {
+    color: #FFC702; }
+  .card-block-right ul li {
+    line-height: 1.2em; }
+
+hr.white {
+  background-color: white; }
+
+.card-title-right {
+  margin-bottom: .75rem;
+  color: #FFC702; }
 
 /*# sourceMappingURL=default.css.map */
