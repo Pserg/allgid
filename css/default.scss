@@ -46,6 +46,7 @@ body {
 
 .img-mail {
     margin-top: 0.5em;
+    margin-left: 6em;
 }
 .img-profile {
     margin-top: 0.5em;
@@ -329,6 +330,15 @@ hr {
     left: 3em;
 }
 
+.client-card-block-header {
+    padding: 10px 1.25em 10px 1.25em;
+
+    & input{
+        float: right;
+        margin-right: 10px;
+    }
+}
+
 .button {
     background-color: #383838;
     border-radius: 3px;
@@ -367,8 +377,76 @@ hr.white {
     background-color: white;
 }
 
+hr.gray {
+    background-color: #CACACA;
+    width: 90%;
+}
+
 .card-title-right {
     margin-bottom: .75rem;
     color: $primary-color;
 }
 
+
+.client-card-block {
+    padding: 10px 1.25em 10px 1.25em;
+}
+
+.content-sale {
+    background-color: #262626;
+    color: $primary-color;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 2px;
+    & span {
+        margin-left: 3px;
+        font-size: 18px;
+    }
+}
+
+.definition {
+    margin-left: 18px;
+    margin-top: 7px;
+    line-height: 14px;
+}
+
+.price {
+    margin-left: 18px;
+    line-height: 18px;
+}
+
+.opinion{
+    & img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        float: left;
+    }
+    padding: 10px;
+
+    input {
+
+    }
+}
+
+.sidebar-sale {
+    margin-bottom: 15px;
+    & img {
+        width: 100%;
+    }
+}
+
+.client-card-header {
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 1em;
+}
+
+.sale-card-body {
+    margin-top: 10px;
+}
+
+.sale-date {
+    font-size: 10px;
+    color: gray;
+}
