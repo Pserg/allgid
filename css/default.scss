@@ -206,6 +206,11 @@ body {
     line-height: 1.1em;
 }
 
+.card-text-article {
+    margin-bottom: 15px;
+    line-height: 1.1em;
+}
+
 p {
     margin-bottom: 8px;
 }
@@ -449,4 +454,25 @@ hr.gray {
 .sale-date {
     font-size: 10px;
     color: gray;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.client-buttons-center {
+    margin-top: 10px;
+    margin-left: 260px;
+}
+
+.text {
+    white-space: nowrap;
+}
+
+.contacts {
+    margin-top: 15px;
+}
+
+.my-card-block-article {
+    padding: 10px 1.25em 10px 1.25em;
 }
