@@ -476,3 +476,76 @@ hr.gray {
 .my-card-block-article {
     padding: 10px 1.25em 10px 1.25em;
 }
+
+/////////////Доска-обьявлений//////////////
+
+.ads-card {
+    position: relative;
+    display: block;
+    margin-bottom: .75rem;
+    border: 1px solid #CACACA;
+    border-radius: .25rem;
+
+    &.orange {
+        background-color: #FFBF07;
+    }
+    &.white {
+        background-color: #FFFFFF;
+    }
+    &.gray {
+        background-color: #CACACA;
+    }
+}
+
+.ads-header {
+    padding: 10px;
+}
+
+.ads-img {
+    margin-left: 10px;
+    & img {
+        border: 7px solid white;
+        border-radius: 3px;
+    }
+}
+
+.ads-buttons {
+    margin-top: 15px;
+    margin-left: 10px;
+    & input {
+        margin-right: 10px;
+    }
+}
+
+hr.black {
+    background-color: black;
+    width: 97%;
+    margin-top: 14px;
+}
+
+.ads-footer {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ads-time {
+    display: inline;
+    margin-left: 5px;
+}
+
+.ads-caption {
+    display: inline;
+    margin-left: 66px;
+}
+
+.img-border {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #CACACA;
+}
+
+.ads-card-text {
+    margin: 10px;
+    line-height: 1em;
+    white-space: nowrap;
+}
