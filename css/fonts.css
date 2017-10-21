@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Fregat';
+    font-family: 'Fregat-boldItalic';
     src: url('../../AllGid/fonts/Fregat/Fregat-BoldItalic.eot');
     src: local('Fregat Bold Italic'), local('Fregat-BoldItalic'),
     url('../../AllGid/fonts/Fregat/Fregat-BoldItalic.eot?#iefix') format('embedded-opentype'),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'Fregat';
+    font-family: 'Fregat-bold';
     src: url('../../AllGid/fonts/Fregat/Fregat-Bold.eot');
     src: local('Fregat Bold'), local('Fregat-Bold'),
     url('../../AllGid/fonts/Fregat/Fregat-Bold.eot?#iefix') format('embedded-opentype'),
@@ -32,7 +32,7 @@
 }
 
 @font-face {
-    font-family: 'Fregat';
+    font-family: 'Fregat-italic';
     src: url('../../AllGid/fonts/Fregat/Fregat-Italic.eot');
     src: local('Fregat Italic'), local('Fregat-Italic'),
     url('../../AllGid/fonts/Fregat/Fregat-Italic.eot?#iefix') format('embedded-opentype'),

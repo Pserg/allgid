@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: Fregat;
+  font-family: Fregat, Serif;
   font-size: 14px; }
 
 /* For mobile phones: */
@@ -91,25 +91,25 @@ body {
   border-bottom-right-radius: 3px;
   height: 45px; }
 
-/* Ширина слайдера */
+/* ╨и╨╕╤А╨╕╨╜╨░ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
 #slider {
   width: 40%;
   background-color: #FFC702; }
 
-/* Контейнер слайдера */
+/* ╨Ъ╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
 .ui-slider {
   position: relative; }
 
-/* Ползунок */
+/* ╨Я╨╛╨╗╨╖╤Г╨╜╨╛╨║ */
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
   width: 14px;
-  /* Задаем нужную ширину */
+  /* ╨Ч╨░╨┤╨░╨╡╨╝ ╨╜╤Г╨╢╨╜╤Г╤О ╤И╨╕╤А╨╕╨╜╤Г */
   height: 14px;
-  /* и высоту */
+  /* ╨╕ ╨▓╤Л╤Б╨╛╤В╤Г */
   background: black;
-  /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+  /* ╨║╨░╤А╤В╨╕╨╜╨║╨░ ╨╕╨╖╨╛╨▒╤А╨░╨╢╨░╤О╤Й╨░╤П ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║. ╨Ш╨╗╨╕ ╨╝╨╛╨╢╨╜╨╛ ╨╖╨░╨╗╨╕╤В╤М ╤Ж╨▓╨╡╤В╨╛╨╝, ╨╖╨░╨┤╨░╤В╤М ╨▒╨╛╤А╨┤╤О╤А ╨╕ ╤Б╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╤П */
   cursor: pointer; }
 
 .ui-slider .ui-slider-range {
@@ -120,12 +120,12 @@ body {
   border: 0;
   overflow: hidden; }
 
-/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+/* ╨│╨╛╤А╨╕╨╖╨╛╨╜╤В╨░╨╗╤М╨╜╤Л╨╣ ╤Б╨╗╨░╨╣╨┤╨╡╤А (╤Б╨░╨╝╨░ ╨┐╨╛╨╗╨╛╤Б╨░ ╨┐╨╛ ╨║╨╛╤В╨╛╤А╨╛╨╣ ╨▒╨╡╨│╨░╨╡╤В ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║) */
 .ui-slider-horizontal {
   height: 3px;
-  /* задаем высоту согласно дизайна */ }
+  /* ╨╖╨░╨┤╨░╨╡╨╝ ╨▓╤Л╤Б╨╛╤В╤Г ╤Б╨╛╨│╨╗╨░╤Б╨╜╨╛ ╨┤╨╕╨╖╨░╨╣╨╜╨░ */ }
 
-/* позиционируем ползунки */
+/* ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╤Г╨╡╨╝ ╨┐╨╛╨╗╨╖╤Г╨╜╨║╨╕ */
 .ui-slider-horizontal .ui-slider-handle {
   top: -7px;
   margin-left: -6px; }
@@ -140,17 +140,17 @@ body {
 .ui-slider-horizontal .ui-slider-range-max {
   right: 0; }
 
-/* оформление полосы по которой ходит ползунок */
+/* ╨╛╤Д╨╛╤А╨╝╨╗╨╡╨╜╨╕╨╡ ╨┐╨╛╨╗╨╛╤Б╤Л ╨┐╨╛ ╨║╨╛╤В╨╛╤А╨╛╨╣ ╤Е╨╛╨┤╨╕╤В ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║ */
 .ui-widget-content {
   border: 2px solid #FFF;
   background: #FFF; }
 
-/* оформление активного участка (между двумя ползунками) */
+/* ╨╛╤Д╨╛╤А╨╝╨╗╨╡╨╜╨╕╨╡ ╨░╨║╤В╨╕╨▓╨╜╨╛╨│╨╛ ╤Г╤З╨░╤Б╤В╨║╨░ (╨╝╨╡╨╢╨┤╤Г ╨┤╨▓╤Г╨╝╤П ╨┐╨╛╨╗╨╖╤Г╨╜╨║╨░╨╝╨╕) */
 .ui-widget-header {
   border: 1px solid #FFF;
   background: #FFF; }
 
-/* скругление для полосы слайдера */
+/* ╤Б╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╨╡ ╨┤╨╗╤П ╨┐╨╛╨╗╨╛╤Б╤Л ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
 .ui-corner-all {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -404,32 +404,35 @@ hr.gray {
 .my-card-block-article {
   padding: 10px 1.25em 10px 1.25em; }
 
-.ads-card {
+.sda {
+  color: black; }
+
+.sda-card {
   position: relative;
   display: block;
   margin-bottom: .75rem;
   border: 1px solid #CACACA;
   border-radius: .25rem; }
-  .ads-card.orange {
+  .sda-card.orange {
     background-color: #FFBF07; }
-  .ads-card.white {
+  .sda-card.white {
     background-color: #FFFFFF; }
-  .ads-card.gray {
+  .sda-card.gray {
     background-color: #CACACA; }
 
-.ads-header {
+.sda-header {
   padding: 10px; }
 
-.ads-img {
+.sda-img {
   margin-left: 10px; }
-  .ads-img img {
+  .sda-img img {
     border: 7px solid white;
     border-radius: 3px; }
 
-.ads-buttons {
+.sda-buttons {
   margin-top: 15px;
   margin-left: 10px; }
-  .ads-buttons input {
+  .sda-buttons input {
     margin-right: 10px; }
 
 hr.black {
@@ -437,15 +440,15 @@ hr.black {
   width: 97%;
   margin-top: 14px; }
 
-.ads-footer {
+.sda-footer {
   margin-left: 10px;
   margin-bottom: 10px; }
 
-.ads-time {
+.sda-time {
   display: inline;
   margin-left: 5px; }
 
-.ads-caption {
+.sda-caption {
   display: inline;
   margin-left: 66px; }
 
@@ -454,9 +457,32 @@ hr.black {
   border-radius: 3px;
   border: 1px solid #CACACA; }
 
-.ads-card-text {
+.sda-card-text {
   margin: 10px;
   line-height: 1em;
   white-space: nowrap; }
+
+.text_area {
+  resize: none;
+  padding-left: 10px;
+  height: 100px;
+  border: 1px solid #CACACA;
+  margin: 10px;
+  width: 97%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.my-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+  .my-container input {
+    margin-bottom: 10px; }
+
+.sda-social {
+  margin-left: 17px;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=default.css.map */
