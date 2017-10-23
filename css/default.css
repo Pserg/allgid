@@ -685,4 +685,25 @@ hr.black {
     background-color: #7362b0;
     vertical-align: top; }
 
+.tender-img {
+  background-color: black;
+  float: left;
+  min-width: 190px;
+  min-height: 200px;
+  padding-left: 10px;
+  padding-top: 20px; }
+
+.tender-select {
+  height: 30px;
+  width: 300px; }
+
+.row.fon {
+  margin-top: 15px; }
+
+.tender-card-block {
+  padding: 1.25rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FFC702; }
+
 /*# sourceMappingURL=default.css.map */
