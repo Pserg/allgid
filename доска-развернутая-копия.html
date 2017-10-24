@@ -31,10 +31,10 @@
             </div>
             <div class="tender-card-block">
                 <h6>Добавьте заказ на любые ремонтные или строительные работы</h6>
-                <hr class="white">
+                <hr class="tender-white">
                 <form class="form" action="">
-                    <div class="form-title"><input type="text" placeholder="Укажите название заказа (например: Ремонт двухкомнатной квартиры 64 м2)" style="width: 500px"></div>
-                    <div class="form-textarea"><textarea style="width: 500px" placeholder="Перечень работ (опишите максимально подробно: перечень работ, площадь помещений, сроки выполнения, требования к мастерам и т. д.)"></textarea>
+                    <div class="form-title"><input type="text" placeholder="Укажите название заказа (например: Ремонт двухкомнатной квартиры 64 м2)"></div>
+                    <div class="form-textarea"><textarea rows="4" placeholder="Перечень работ (опишите максимально подробно: перечень работ, площадь помещений, сроки выполнения, требования к мастерам и т. д.)"></textarea>
                     </div>
                     <div class="container">
                         <div class="">
@@ -44,18 +44,50 @@
                                 <option value="2">Хата</option>
                                 <option value="3">Апартаменты</option>
                             </select>
-                            <button style="float: right" type="submit" class="search-mid">Добавить заказ</button>
+                            <button style="float: right" type="submit" class="tender-button">Добавить заказ</button>
                         </div>
                     </div>
-
                 </form>
             </div>
+            <div class="container find-tender">
+                <nav class="navbar navbar-full navbar-light">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-inline form find-tender-select" action="#" method="GET">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select class="form-control mid-nav-input">
+                                            <option selected>Выбрать город</option>
+                                            <option value="1">Залупинск</option>
+                                            <option value="2">Зажопинск</option>
+                                            <option value="3">Ебалово</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 slider">
+                                    <input type="text" class="minCostTender" value="9999999" disabled/>
+                                    <div class="form-group ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="slider"></div>
+                                    <input type="text" class="maxCostTender" value="99999999" disabled/>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <button type="submit" class="find-tender-button">Быстрый поиск</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
         </div>
         <div class="col-md-4">
             <div>
                 <img src="img/ruka.png">
             </div>
         </div>
+
     </div>
 
     <div class="container">
@@ -291,12 +323,12 @@
             range: true,
             step: 1,
             stop: function(event, ui) {
-                jQuery("#minCost").val(jQuery("#slider").slider("values",0));
-                jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
+                jQuery(".minCostTender").val(jQuery("#slider").slider("values",0));
+                jQuery("input.maxCostTender").val(jQuery("#slider").slider("values",1));
             },
             slide: function(event, ui){
-                jQuery("#minCost").val(jQuery("#slider").slider("values",0));
-                jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
+                jQuery(".minCostTender").val(jQuery("#slider").slider("values",0));
+                jQuery("input.maxCostTender").val(jQuery("#slider").slider("values",1));
             }
         });
     });
