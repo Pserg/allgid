@@ -14,7 +14,17 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="plugins/slick/slick/slick.css">
     <link rel="stylesheet" href="plugins/slick/slick/slick-theme.css">
-
+    <style>
+        .ui-slider .ui-slider-handle {
+            position: absolute;
+            z-index: 2;
+            width: 14px; /* Задаем нужную ширину */
+            height: 14px; /* и высоту */
+            background: #FFC702; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+            border: none;
+            cursor: pointer
+        }
+    </style>
     <link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
     <title>Доска объявлений</title>
 </head>
@@ -57,7 +67,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <select class="form-control mid-nav-input">
-                                            <option selected>Выбрать город</option>
+                                            <option selected>Выберите специализацию</option>
                                             <option value="1">Залупинск</option>
                                             <option value="2">Зажопинск</option>
                                             <option value="3">Ебалово</option>
@@ -93,118 +103,86 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 no-padding">
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                        </div>
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
                     </div>
-                </div>
-
-                <div class="my-container contractors-sda fon">
-                    <img src="img/ruka.png">
-                </div>
-
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
@@ -213,58 +191,174 @@
                     <img src="img/ruka.png">
                 </div>
 
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="block fon">
-                    <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
-                    <div class="card-block">
-                        <h6>ООО СК "ЛСС ДОМ"</h6>
-                        <hr>
-                        <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
-                            гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
-                        <div class="my-card-footer">
-                            <a href="#" class="comment">Оставить отзыв</a>
-                            <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-container contractors-sda fon">
+                    <img src="img/ruka.png">
+                </div>
+
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tender-block tender-fon">
+                    <div class="col-md-4 tender-card-header">
+                        <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                        <p class="tender-date">23 октября 2017 11:02</p>
+                        <p class="tender-accept"><a href="#" class="comment">Принять участие</a></p>
+                    </div>
+                    <div class="tender-card-block-text col-md-8">
+                        <h6>Косметический ремонт кухни 6,5 м2</h6>
+                        <hr class="orange">
+                        <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков
+                            Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в по...
+                            <a href="#" class="tender-more">Подробнее</a>
+                        </p>
+                        <div class="attr">
+                            <p><b>Специализация:</b> Отделка загородного дома</p>
+                            <p style="margin-bottom: 6px"><b>Поступило предложений:</b> 9999999</p>
+                            <p class="itog"><b>Бюджет:</b> не определен</p>
                         </div>
                     </div>
                 </div>
