@@ -47,6 +47,13 @@ body {
 .navbar {
   background-color: #383838; }
 
+.navbar-brand {
+  float: left;
+  padding-top: 0;
+  padding-bottom: .25rem;
+  margin-right: 1rem;
+  font-size: 1.25rem; }
+
 .nav-link-my {
   display: block;
   padding-top: .425rem;
@@ -718,7 +725,8 @@ hr.black {
   .form-title input {
     border: none;
     border-radius: 2px;
-    width: 500px; }
+    width: 500px;
+    padding-left: 5px; }
 
 .form-textarea {
   margin-bottom: 10px; }
@@ -726,7 +734,8 @@ hr.black {
     border: none;
     border-radius: 2px;
     width: 500px;
-    resize: none; }
+    resize: none;
+    padding-left: 5px; }
 
 .tender-button {
   background-color: #3A3A3A;

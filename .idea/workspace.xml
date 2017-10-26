@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.css" afterPath="$PROJECT_DIR$/css/default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.css.map" afterPath="$PROJECT_DIR$/css/default.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.scss" afterPath="$PROJECT_DIR$/css/default.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.html" afterPath="$PROJECT_DIR$/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/доска-развернутая-копия.html" afterPath="$PROJECT_DIR$/доска-развернутая-копия.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,14 +27,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6951741">
+    <splitter split-orientation="horizontal" split-proportion="0.6408064">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3840">
-                  <caret line="259" column="15" lean-forward="false" selection-start-line="245" selection-start-column="12" selection-end-line="259" selection-end-column="15" />
+                <state relative-caret-position="896">
+                  <caret line="228" column="14" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="228" selection-end-column="14" />
                   <folding>
                     <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -44,8 +45,8 @@
           <file leaf-file-name="доска-развернутая-копия.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/доска-развернутая-копия.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+                <state relative-caret-position="619">
+                  <caret line="77" column="77" lean-forward="false" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
                   <folding>
                     <element signature="n#style#0;n#button#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -61,6 +62,28 @@
                     <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#12;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#13;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="блог.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/блог.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="917">
+                  <caret line="204" column="14" lean-forward="false" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
+                  <folding>
+                    <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/header.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="38" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -82,8 +105,8 @@
           <file leaf-file-name="default.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/default.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="799">
-                  <caret line="945" column="1" lean-forward="false" selection-start-line="945" selection-start-column="1" selection-end-line="945" selection-end-column="1" />
+                <state relative-caret-position="261">
+                  <caret line="881" column="26" lean-forward="false" selection-start-line="881" selection-start-column="26" selection-end-line="881" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -170,11 +193,12 @@
         <option value="$PROJECT_DIR$/доска-развернутая.html" />
         <option value="$PROJECT_DIR$/js/zoom.js" />
         <option value="$PROJECT_DIR$/подрядчики.html" />
-        <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/slider.scss" />
-        <option value="$PROJECT_DIR$/доска-развернутая-копия.html" />
+        <option value="$PROJECT_DIR$/блог.html" />
+        <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/css/default.scss" />
+        <option value="$PROJECT_DIR$/доска-развернутая-копия.html" />
       </list>
     </option>
   </component>
@@ -266,19 +290,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="A:\PHP\projects\allgid" />
-      <recent name="$PROJECT_DIR$/plugins" />
-      <recent name="$PROJECT_DIR$/fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/fonts/bootstrap" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/style" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="A:\PHP\projects\allgid" />
+      <recent name="$PROJECT_DIR$/plugins" />
+      <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -389,18 +413,19 @@
       <workItem from="1508411110563" duration="47000" />
       <workItem from="1508485882314" duration="4712000" />
       <workItem from="1508728974360" duration="16083000" />
-      <workItem from="1508913846144" duration="4122000" />
+      <workItem from="1508913846144" duration="6456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131627000" />
+    <option name="totallyTimeSpent" value="133961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20979765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12832801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12832801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -431,13 +456,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/bootstrap/bootstrap-4.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-790">
@@ -619,6 +637,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="767">
           <caret line="233" column="41" lean-forward="false" selection-start-line="232" selection-start-column="8" selection-end-line="233" selection-end-column="41" />
+          <folding>
+            <marker date="1508728165000" expanded="true" signature="1034:16112" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="1140:15303" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="1162:15296" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="1193:12641" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="1224:12625" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="1263:1330" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="1382:12606" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="1760:2399" ph="..." />
+            <marker date="1508728165000" expanded="false" signature="2638:2655" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="2718:3870" ph="..." />
+            <marker date="1508728165000" expanded="false" signature="3903:3920" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="4004:4304" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="4355:5465" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="5516:6037" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="6088:6388" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="6414:7056" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="6443:6663" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="6692:6830" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="6859:7030" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="7107:7234" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="7284:7387" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="7437:8130" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="8155:9948" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="8184:8895" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="8924:9922" ph="..." />
+            <marker date="1508728165000" expanded="false" signature="9981:9998" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="10058:12319" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="10087:10520" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="10549:10799" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="10828:11227" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="11256:12028" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="12057:12293" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="12369:12583" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="12687:15285" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="12718:14972" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="12765:14953" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="12906:13400" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="13541:14165" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="14306:14930" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="15012:15072" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="15111:15171" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="15210:15270" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="15967:16103" ph="..." />
+            <marker date="1508728165000" expanded="true" signature="16001:16092" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,27 +731,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/суб-подрядчики.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="259" column="15" lean-forward="false" selection-start-line="245" selection-start-column="12" selection-end-line="259" selection-end-column="15" />
-          <folding>
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,14 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/default.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="945" column="1" lean-forward="false" selection-start-line="945" selection-start-column="1" selection-end-line="945" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/slider.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -744,10 +783,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="228" column="14" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="228" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/блог.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="917">
+          <caret line="204" column="14" lean-forward="false" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/default.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="881" column="26" lean-forward="false" selection-start-line="881" selection-start-column="26" selection-end-line="881" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/доска-развернутая-копия.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        <state relative-caret-position="619">
+          <caret line="77" column="77" lean-forward="false" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
