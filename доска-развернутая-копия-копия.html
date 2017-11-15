@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+    <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/star-rating.min.css">
+    <link rel="stylesheet" href="css/glyphicons.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="plugins/slick/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick/slick-theme.css">
+    <style>
+        .ui-slider .ui-slider-handle {
+            position: absolute;
+            z-index: 2;
+            width: 14px; /* Задаем нужную ширину */
+            height: 14px; /* и высоту */
+            background: #FFC702; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+            border: none;
+            cursor: pointer
+        }
+
+        #slider {
+            width: 35%;
+            background-color: #FFC702;
+        }
+    </style>
+    <link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+    <title>Доска объявлений</title>
+</head>
+<body>
+<div id="header" class="fon">
+</div>
+
+
+<div class="container">
+    <div class="row fon">
+        <div class="col-md-8">
+            <div class="tender-block tender-fon">
+                <div class="col-md-3 tender-card-header">
+                    <a href="карточка-клиента.html"><img src="img/office-2.png" width="170" height="125"></a>
+                    <p><button type="submit" class="tender-button-2 top">Задать вопрос</button></p>
+                    <p><button type="submit" class="tender-button-2 bot">Принять участие</button></p>
+                </div>
+                <div class="tender-card-block-text col-md-6">
+                    <h6>Косметический ремонт кухни 6,5 м2</h6>
+                    <hr class="orange">
+                    <p class="tender-card-text">Косметический ремонт подъездов: Частичная росчитска стен Частичная росчистка потолков Подшпатлевать Частично штукатурить Подготовка под окраскраску Окраска Заделка отверстий в бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+                    </p>
+                </div>
+                <div class="col-md-3 no-padding tender-card-right">
+                    <div>
+                        <span class="tender-title">Заказ открыт</span><br>
+                        <span class="date">23 октября 2017 11:02</span>
+                        <span class="offering">Поступило предложений:</span>
+                        <span class="amount">9999999</span>
+                        <div class="budget">
+                            <span>Бюджет:</span> 999 999 999
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-9 no-padding">
+                <div class="took-part">
+                    <span>Приняли участие:</span> 999 999
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 no-padding">
+                        <div class="block">
+                            <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
+                            <div class="card-block">
+                                <h6>ООО СК "ЛСС ДОМ"</h6>
+                                <hr>
+                                <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                    гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                                <div class="my-card-footer">
+                                    <a href="#" class="comment">Оставить отзыв</a>
+                                    <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 no-padding">
+                        <div class="block">
+                            <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
+                            <div class="card-block">
+                                <h6>ООО СК "ЛСС ДОМ"</h6>
+                                <hr>
+                                <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                    гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                                <div class="my-card-footer">
+                                    <a href="#" class="comment">Оставить отзыв</a>
+                                    <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 no-padding">
+                        <div class="block">
+                            <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
+                            <div class="card-block">
+                                <h6>ООО СК "ЛСС ДОМ"</h6>
+                                <hr>
+                                <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                    гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                                <div class="my-card-footer">
+                                    <a href="#" class="comment">Оставить отзыв</a>
+                                    <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 no-padding">
+                        <div class="block">
+                            <a href="карточка-клиента.html"><img src="img/sozidant.jpg" width="177" height="162"></a>
+                            <div class="card-block">
+                                <h6>ООО СК "ЛСС ДОМ"</h6>
+                                <hr>
+                                <p class="card-text">Проектирование, строительство и отделка деревянных домов, бань,
+                                    гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области...</p>
+                                <div class="my-card-footer">
+                                    <a href="#" class="comment">Оставить отзыв</a>
+                                    <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="sidebar-sale">
+                <img src="img/ruka.png">
+            </div>
+            <div class="sidebar-sale">
+                <img src="img/ruka.png">
+            </div>
+            <div class="sidebar-sale">
+                <img src="img/ruka.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="fon">
+</div>
+
+</body>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script src="js/star-rating.js"></script>
+<script src="themes/krajee-svg/theme.js"></script>
+<script src="js/locales/ru.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+
+        $( "#slider" ).slider({
+            min: 9999999,
+            max: 99999999,
+            values: [9999999,99999999],
+            range: true,
+            step: 1,
+            stop: function(event, ui) {
+                jQuery(".minCostTender").val(jQuery("#slider").slider("values",0));
+                jQuery("input.maxCostTender").val(jQuery("#slider").slider("values",1));
+            },
+            slide: function(event, ui){
+                jQuery(".minCostTender").val(jQuery("#slider").slider("values",0));
+                jQuery("input.maxCostTender").val(jQuery("#slider").slider("values",1));
+            }
+        });
+    });
+</script>
+</html>
