@@ -396,7 +396,7 @@ hr.gray {
   color: gray; }
 
 .gallery {
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 .client-buttons-center {
   margin-top: 10px;
@@ -841,7 +841,7 @@ hr.orange {
   height: 25px; }
 
 .project-card-block {
-  height: 400px;
+  height: 415px;
   padding-top: 10px;
   margin-left: -20px; }
 
@@ -868,6 +868,17 @@ hr.orange {
   float: right;
   margin-top: 3px;
   margin-right: 7px; }
+
+.slider-img-array-size {
+  margin-top: 10px; }
+
+.slider-img-array-size img {
+  width: 128px;
+  height: 81px;
+  margin-top: 9px; }
+
+.slide-img-size {
+  width: 575px; }
 
 .tender-button-2 {
   border: none;
