@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">-->
+
     <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/default.css">
@@ -49,9 +53,11 @@
                 <div class="client-card-block-header">
                     <div class="row">
                         <div class="col-md-8"><h5 style="text-align: center">ООО СК "ЛСС ДОМ"</h5></div>
-                        <div class="col-md-4 client-buttons">
+                        <div class="col-md-4 ">
+                            <div class="client-buttons">
                             <input class="button" type="submit" value="Оставить отзыв">
                             <input class="button" type="submit" value="Задать вопрос">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,10 +71,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="card gallery">
-                <div class="project-card-block">
-                    <div class="col-md-9">
-                        <div class="slider-for slide-img-size">
+            <div class="card gallery ">
+                <div class="project-card-block ">
+                    <div class="row">
+                    <div class="col-md-9 slider-img-main ">
+                        <div class="slider-for">
                             <div class="col-md-4"><img src="img/house-1.jpg" width="200"></div>
                             <div class="col-md-4"><img src="img/house-2.jpg" width="200"></div>
                             <div class="col-md-4"><img src="img/house-3.jpg" width="200"></div>
@@ -76,16 +83,18 @@
                             <div class="col-md-4"><img src="img/house-5.jpg" width="200"></div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="slider-nav slider-img-array-size">
-                            <div class="col-md-4"><img src="img/house-1.jpg" width=""></div>
-                            <div class="col-md-4"><img src="img/house-2.jpg" width=""></div>
-                            <div class="col-md-4"><img src="img/house-3.jpg" width="200"></div>
-                            <div class="col-md-4"><img src="img/house-4.jpg" width="200"></div>
-                            <div class="col-md-4"><img src="img/house-5.jpg" width="200"></div>
+                    <div class="col-md-3  slider-img-array">
+                        <div class="slider-nav ">
+                            <div class=""><img src="img/house-1.jpg" width=""></div>
+                            <div class=""><img src="img/house-2.jpg" width=""></div>
+                            <div class=""><img src="img/house-3.jpg" width="200"></div>
+                            <div class=""><img src="img/house-4.jpg" width="200"></div>
+                            <div class=""><img src="img/house-5.jpg" width="200"></div>
                         </div>
                     </div>
+                    </div>
                 </div>
+
             </div>
 
             <div class="card">
@@ -157,7 +166,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/house-3.jpg">
+                <img class="card-img-top " src="img/house-3.jpg">
                 <div class="card-body">
                     <p class="definition">Деревянный дом Белая дача<br>
                         100.8м2 &nbsp;&nbsp;&nbsp; 8х9,5м</p>
@@ -180,9 +189,14 @@
 <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+
+
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 <script src="js/star-rating.js"></script>
 <script src="themes/krajee-svg/theme.js"></script>
 <script src="js/locales/ru.js"></script>
@@ -196,6 +210,7 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
+
             fade: true,
             asNavFor: '.slider-nav'
         });
@@ -203,9 +218,11 @@
         $('.slider-nav').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
+            arrows: true,
             asNavFor: '.slider-for',
             focusOnSelect: true,
-            vertical: true,
+            vertical: true
+
         });
     });
 </script>

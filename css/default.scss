@@ -6,6 +6,28 @@
 //[class*="col-"] {
 //    width: 100%;
 //}
+
+    /*MIXIN*/
+
+@mixin break($args...) {
+    @if length($args) == 1 {
+        @media (min-width: nth($args, 1)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: nth($args, 1))
+        and (max-width: nth($args, 2)) {
+            @content;
+        }
+    }
+}
+
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 300px;
+
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
@@ -41,20 +63,20 @@ body {
     font-size: 1.25rem;
 }
 
-.nav-link-my {
-    display: block;
-    padding-top: .425rem;
-    padding-bottom: .425rem;
-    color: #EAEBEE;
+.nav-link {
+
+    color: #EAEBEE !important;
     &:hover {
-        color: $primary-color;
-        text-decoration: none;
+        color: $primary-color !important;
+        text-decoration: none !important;
     }
 }
 
 .img-mail {
     margin-top: 0.5em;
-    margin-left: 6em;
+    @include break($xl) {
+        margin-left: 6em;
+    }
 }
 .img-profile {
     margin-top: 0.5em;
@@ -286,13 +308,17 @@ hr {
 .my-card-footer {
     margin-top: 26px;
 }
-
 ////////////FOOTER///////////////
 
 .footer {
     background-color: #262626;
-    height: 100px;
     color: $secondary-color;
+    @include break($md,$xl) {
+        height: 100px;
+    }
+    @include break($xs,$md) {
+        text-align: center;
+    }
 
     & ul {
         list-style-type: none;
@@ -321,6 +347,22 @@ hr {
         margin-left: -10px;
         margin-top: 1em;
     }
+    & .left-ul {
+        @include break($sm,$xl) {
+            display: none;
+        }
+    }
+    & .right-ul {
+        @include break($sm,$xl) {
+            display: none;
+        }
+    }
+    & .logo-footer {
+        margin-left: auto;
+        @include break($sm,$xl) {
+            display: none;
+        }
+    }
 }
 
 .allgid-logo {
@@ -332,10 +374,17 @@ hr {
 }
 
 .social {
+    @include break($xl) {
+        margin-left: 30px;
+        margin-right: -30px;
+    }
+    @include break($md,$xl) {
+        text-align: right;
+    }
+
     color: $primary-color;
     margin-top: 1em;
-    margin-left: 30px;
-    margin-right: -30px;
+
 }
 
 .right-ul {
@@ -345,7 +394,10 @@ hr {
 .logo {
     border-radius: 4px;
     background-color: $secondary-color;
-    margin-left: 8em;
+    @include break($md,$xl) {
+        margin-left: 8em;
+    }
+
     margin-top: 1em;
 }
 
@@ -354,16 +406,23 @@ hr {
 .company-logo {
     position: absolute;
     z-index: 99999;
-    top: 8.5em;
-    left: 3em;
+    @include break($xl) {
+        top: 8.5em;
+        left: 3em;
+    }
+    @include break($xs,$xl) {
+        width: 75px;
+    }
 }
 
 .client-card-block-header {
     padding: 10px 1.25em 10px 1.25em;
 
     & input{
-        float: right;
-        margin-right: 10px;
+        @include break($xl) {
+            float: right;
+            margin-right: 10px;
+        }
     }
 }
 
@@ -484,8 +543,11 @@ hr.gray {
 }
 
 .client-buttons-center {
-    margin-top: 10px;
-    margin-left: 260px;
+    @include break($xl) {
+        margin-top: 10px;
+        margin-left: 260px;
+    }
+
 }
 
 .text {
@@ -1035,17 +1097,13 @@ hr.orange {
 ////////////////////Project//////////////////////
 
 .project-card-block {
-    height: 415px;
 
-    padding-top: 10px;
-    margin-left: -20px;
+    padding: 10px 0;
+    @include break($xs, $xl) {
+        padding: 20px 0;
+    }
 
 }
-
-
-
-
-
 
 
 .project-itog {
@@ -1075,21 +1133,71 @@ hr.orange {
     margin-right: 7px;
 }
 
-///
-.slider-img-array-size {
-    margin-top: 10px;
+/*Настоойка  размеров слайдера*/
+
+.slider-img-array img{
+    @include break($xl){
+        width: 128px;
+        height: 78px;
+        margin-top: 11px;
+    }
+
+    margin-top: 11px;
 }
 
-.slider-img-array-size img{
-    width: 128px;
-    height: 81px;
-    margin-top: 9px;
+.slider-img-array {
+    @include break($xs,$xl) {
+        max-width: 100%;
+        flex: 0 0 100%;
+
+    }
 }
 
-.slide-img-size {
-    width: 575px;
+
+
+.slider-img-main {
+    padding: 0 0 0 14px;
+    @include break($xs, $xl){
+        display: none;
+    }
+    @include break($lg) {
+        margin: auto;
+    }
 }
 
+/////////////
+.client-buttons {
+    @include break($xs,$md) {
+        text-align: center;
+    }
+}
+
+.btn-mobile {
+    margin-right: auto;
+}
+
+/*Место расположение кнпки слайдера*/
+.slick-next {
+    top: auto !important;
+    right: 84px !important;
+    @include break($xs, $xl) {
+        position: static !important;
+        top: auto !important;
+        margin: 0 auto !important;
+    }
+}
+
+
+
+.slick-prev {
+    top: -11px !important;
+    left: 55px !important;
+    @include break($xs, $xl) {
+        position: static !important;
+        top: -14px !important;
+        margin: 0 auto !important;
+    }
+}
 
 ////////////////////tenders-next///////////////
 
@@ -1159,6 +1267,16 @@ hr.orange {
     margin-top: 80px;
     & span {
         font-weight: 900;
+    }
+}
+
+////////////////////HEADER/////////////////
+
+.main-header {
+    .mail-profile {
+        @include break($xs) {
+            text-align: center;
+        }
     }
 }
 
