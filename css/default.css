@@ -98,25 +98,25 @@ body {
   border-bottom-right-radius: 3px;
   height: 45px; }
 
-/* ╨и╨╕╤А╨╕╨╜╨░ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
+/* Ширина слайдера */
 #slider {
   width: 40%;
   background-color: #FFC702; }
 
-/* ╨Ъ╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
+/* Контейнер слайдера */
 .ui-slider {
   position: relative; }
 
-/* ╨Я╨╛╨╗╨╖╤Г╨╜╨╛╨║ */
+/* Ползунок */
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
   width: 14px;
-  /* ╨Ч╨░╨┤╨░╨╡╨╝ ╨╜╤Г╨╢╨╜╤Г╤О ╤И╨╕╤А╨╕╨╜╤Г */
+  /* Задаем нужную ширину */
   height: 14px;
-  /* ╨╕ ╨▓╤Л╤Б╨╛╤В╤Г */
+  /* и высоту */
   background: black;
-  /* ╨║╨░╤А╤В╨╕╨╜╨║╨░ ╨╕╨╖╨╛╨▒╤А╨░╨╢╨░╤О╤Й╨░╤П ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║. ╨Ш╨╗╨╕ ╨╝╨╛╨╢╨╜╨╛ ╨╖╨░╨╗╨╕╤В╤М ╤Ж╨▓╨╡╤В╨╛╨╝, ╨╖╨░╨┤╨░╤В╤М ╨▒╨╛╤А╨┤╤О╤А ╨╕ ╤Б╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╤П */
+  /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
   cursor: pointer; }
 
 .ui-slider .ui-slider-range {
@@ -127,12 +127,12 @@ body {
   border: 0;
   overflow: hidden; }
 
-/* ╨│╨╛╤А╨╕╨╖╨╛╨╜╤В╨░╨╗╤М╨╜╤Л╨╣ ╤Б╨╗╨░╨╣╨┤╨╡╤А (╤Б╨░╨╝╨░ ╨┐╨╛╨╗╨╛╤Б╨░ ╨┐╨╛ ╨║╨╛╤В╨╛╤А╨╛╨╣ ╨▒╨╡╨│╨░╨╡╤В ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║) */
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
   height: 3px;
-  /* ╨╖╨░╨┤╨░╨╡╨╝ ╨▓╤Л╤Б╨╛╤В╤Г ╤Б╨╛╨│╨╗╨░╤Б╨╜╨╛ ╨┤╨╕╨╖╨░╨╣╨╜╨░ */ }
+  /* задаем высоту согласно дизайна */ }
 
-/* ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╤Г╨╡╨╝ ╨┐╨╛╨╗╨╖╤Г╨╜╨║╨╕ */
+/* позиционируем ползунки */
 .ui-slider-horizontal .ui-slider-handle {
   top: -7px;
   margin-left: -6px; }
@@ -147,17 +147,17 @@ body {
 .ui-slider-horizontal .ui-slider-range-max {
   right: 0; }
 
-/* ╨╛╤Д╨╛╤А╨╝╨╗╨╡╨╜╨╕╨╡ ╨┐╨╛╨╗╨╛╤Б╤Л ╨┐╨╛ ╨║╨╛╤В╨╛╤А╨╛╨╣ ╤Е╨╛╨┤╨╕╤В ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║ */
+/* оформление полосы по которой ходит ползунок */
 .ui-widget-content {
   border: 2px solid #FFF;
   background: #FFF; }
 
-/* ╨╛╤Д╨╛╤А╨╝╨╗╨╡╨╜╨╕╨╡ ╨░╨║╤В╨╕╨▓╨╜╨╛╨│╨╛ ╤Г╤З╨░╤Б╤В╨║╨░ (╨╝╨╡╨╢╨┤╤Г ╨┤╨▓╤Г╨╝╤П ╨┐╨╛╨╗╨╖╤Г╨╜╨║╨░╨╝╨╕) */
+/* оформление активного участка (между двумя ползунками) */
 .ui-widget-header {
   border: 1px solid #FFF;
   background: #FFF; }
 
-/* ╤Б╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╨╡ ╨┤╨╗╤П ╨┐╨╛╨╗╨╛╤Б╤Л ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
+/* скругление для полосы слайдера */
 .ui-corner-all {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -282,15 +282,29 @@ hr {
     line-height: 1.2em;
     margin-left: -10px;
     margin-top: 1em; }
-  @media (min-width: 576px) and (max-width: 1200px) {
+  .footer .social {
+    color: #FFC702;
+    margin-top: 1em;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .footer .social {
+        margin-left: 30px;
+        margin-right: -30px; } }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .footer .social {
+        text-align: right; } }
+    @media (min-width: 300px) {
+      .footer .social {
+        margin: 1em 0; } }
+  @media (min-width: 300px) and (max-width: 1200px) {
     .footer .left-ul {
       display: none; } }
-  @media (min-width: 576px) and (max-width: 1200px) {
+  @media (min-width: 300px) and (max-width: 1200px) {
     .footer .right-ul {
       display: none; } }
   .footer .logo-footer {
     margin-left: auto; }
-    @media (min-width: 576px) and (max-width: 1200px) {
+    @media (min-width: 300px) and (max-width: 1200px) {
       .footer .logo-footer {
         display: none; } }
 
@@ -299,17 +313,6 @@ hr {
 
 .copyright {
   white-space: nowrap; }
-
-.social {
-  color: #FFC702;
-  margin-top: 1em; }
-  @media (min-width: 1200px) {
-    .social {
-      margin-left: 30px;
-      margin-right: -30px; } }
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .social {
-      text-align: right; } }
 
 .right-ul {
   margin-left: 2em; }
@@ -872,9 +875,6 @@ hr.orange {
 
 .project-card-block {
   padding: 10px 0; }
-  @media (min-width: 300px) and (max-width: 1200px) {
-    .project-card-block {
-      padding: 20px 0; } }
 
 .project-itog {
   background-color: #434343;
@@ -900,7 +900,7 @@ hr.orange {
   margin-top: 3px;
   margin-right: 7px; }
 
-/*╨Э╨░╤Б╤В╨╛╨╛╨╣╨║╨░  ╤А╨░╨╖╨╝╨╡╤А╨╛╨▓ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░*/
+/*Настоойка  размеров слайдера*/
 .slider-img-array img {
   margin-top: 11px; }
   @media (min-width: 1200px) {
@@ -930,7 +930,7 @@ hr.orange {
 .btn-mobile {
   margin-right: auto; }
 
-/*╨Ь╨╡╤Б╤В╨╛ ╤А╨░╤Б╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨║╨╜╨┐╨║╨╕ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░*/
+/*Место расположение кнпки слайдера*/
 .slick-next {
   top: auto !important;
   right: 84px !important; }
