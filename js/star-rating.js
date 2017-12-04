@@ -535,7 +535,7 @@
         filledStar: '<i class="glyphicon glyphicon-star"></i>',
         emptyStar: '<i class="glyphicon glyphicon-star-empty"></i>',
         containerClass: '',
-        size: 'md',
+        size: 'lg',
         animate: true,
         displayOnly: false,
         rtl: false,

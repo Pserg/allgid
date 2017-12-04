@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-    <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/star-rating.min.css">
@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="plugins/slick/slick/slick.css">
     <link rel="stylesheet" href="plugins/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
 
-    <link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+
+    <link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css"/>
     <title>Доска объявлений</title>
 </head>
 <body>
@@ -23,13 +25,18 @@
 <div id="header"></div>
 <!-- end navbar -->
 <br>
+
+
+
 <!-- content -->
 <div class="container">
     <div class="row">
-        <div class="col-md-8 sda">
+        <div class="col-xl-8 sda">
             <div class="sda-card gray">
-                <div class="sda-header"><h5>Отличенные веники от Михалыча</h5></div>
-                <div class="card-body">
+                <div class="col-xl-12 py-2">
+                    <div class=""><h5>Отличенные веники от Михалыча</h5></div>
+                </div>
+                <div class="col-xl-12">
                     <p class="sda-card-text">
                         Приглашаю милых дам на наращивание акриловых ногтей и наращивание ресничек. Рассмотрю ваши варианты<br> дизайна ногтей. Качественно, недорого! Большой опыт работы.<br>
                         Есть возможность общения через Viber, WhatsApp.<br>
@@ -37,9 +44,25 @@
                         Контактный тел.: 8-923-606-3443
                     </p>
                     <div class="sda-img">
-                        <div class="img-border"><img src="img/ads-img.png"></div>
-                        <div class="img-border"><img src="img/ads-img.png"></div>
-                        <div class="img-border"><img src="img/ads-img.png"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2  col-md-3 pl-0 my-2 my-xl-0">
+                                    <a href="img/house-1.jpg" data-fancybox data-caption="Дом из бревна">
+                                        <img class="img-fluid" src="img/house-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-xl-2  col-md-3 pl-0 my-2 my-xl-0">
+                                    <a href="img/house-4.jpg" data-fancybox>
+                                        <img class="img-fluid" src="img/house-4.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-xl-2  col-md-3 pl-0 my-2 my-xl-0">
+                                    <a href="img/house-5.jpg" data-fancybox>
+                                        <img class="img-fluid" src="img/house-5.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr class="black">
@@ -55,13 +78,11 @@
 
             <div class="sda-card white">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-xl-12">
                         <form>
                             <textarea class="text_area" placeholder="Написать сообщение"></textarea>
-                            <div class="my-container">
-                                <div>
-                                    <input class="button" type="submit" value="Отправить">
-                                </div>
+                            <div class="text-center">
+                                <input class="button mb-2 w-75 py-xl-1 py-2" type="submit" value="Отправить">
                             </div>
                         </form>
                     </div>
@@ -70,25 +91,25 @@
 
             <div class="sda-card orange">
                 <div class="client-card-block">
-                    <h5 class="card-title">Внимание совет "Быстрая продажа".</h5>
-                    <hr style="background-color: black">
-                    <p class="card-text">Поделись объявлением в социальные сети сами и попросите своих друзей и близки поделиться этим объявлением.
+                    <h5 class="card-title pl-xl-0 ">Внимание совет "Быстрая продажа".</h5>
+                    <hr class="bg-dark">
+                    <p class="card-text pl-xl-0">Поделись объявлением в социальные сети сами и попросите своих друзей и близки поделиться этим объявлением.
                         Это увеличит просмотры вашего объявления, что ускорит его продажу.
                         Знайте все в ваших руках! Для того, чтобы опубликовать запись, вам достаточно нажать на значок нужной соц. сети!</p>
                 </div>
-                <div class="sda-social">
-                    <a href="#"><img class="" src="img/vk.png" width="24"></a>
-                    <a href="#"><img class="" src="img/vk.png" width="24"></a>
-                    <a href="#"><img class="" src="img/vk.png" width="24"></a>
-                    <a href="#"><img class="" src="img/vk.png" width="24"></a>
-                    <a href="#"><img class="" src="img/vk.png" width="24"></a>
-                    <a href="#"><img class="" src="img/vk.png" width="24"></a>
-                    <a href="#"><img class="" src="img/vk.png" width="24"></a>
+                <div class="sda-social ml-xl-4 mb-3 ">
+                    <a href="#"><img class="" src="img/vk.png"></a>
+                    <a href="#"><img class="" src="img/vk.png"></a>
+                    <a href="#"><img class="" src="img/vk.png"></a>
+                    <a href="#"><img class="" src="img/vk.png"></a>
+                    <a href="#"><img class="" src="img/vk.png"></a>
+                    <a href="#"><img class="" src="img/vk.png"></a>
+                    <a href="#"><img class="" src="img/vk.png"></a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 right-sidebar">
+        <div class="col-xl-4 right-sidebar">
             <div class="card">
                 <div class="card-block-right">
                     <h5 class="card-title-right">Популярные авто топ 10</h5>
@@ -139,13 +160,13 @@
                 </div>
             </div>
 
-            <div class="sidebar-sale">
+            <div class="sidebar-sale d-none d-xl-block">
                 <img src="img/ruka.png">
             </div>
-            <div class="sidebar-sale">
+            <div class="sidebar-sale d-none d-xl-block">
                 <img src="img/ruka.png">
             </div>
-            <div class="sidebar-sale">
+            <div class="sidebar-sale d-none d-xl-block">
                 <img src="img/ruka.png">
             </div>
         </div>
@@ -154,19 +175,26 @@
 <!-- end content -->
 
 <div id="footer"></div>
-<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--<script src="js/jquery-2.2.4.min.js"></script>-->
 <script src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"  integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+
+
 <script src="js/star-rating.js"></script>
 <script src="themes/krajee-svg/theme.js"></script>
 <script src="js/locales/ru.js"></script>
 <script src="plugins/slick/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
 
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("#header").load("header.html");
         $("#footer").load("footer.html");
     });

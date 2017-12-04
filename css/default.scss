@@ -1,25 +1,20 @@
 * {
-    font-family: Fregat, Serif;
-    font-size: 14px;
+  font-family: Fregat, Serif;
+  font-size: 14px;
 }
-/* For mobile phones: */
-//[class*="col-"] {
-//    width: 100%;
-//}
 
-    /*MIXIN*/
+/*MIXIN*/
 
 @mixin break($args...) {
-    @if length($args) == 1 {
-        @media (min-width: nth($args, 1)) {
-            @content;
-        }
-    } @else {
-        @media (min-width: nth($args, 1))
-        and (max-width: nth($args, 2)) {
-            @content;
-        }
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)) {
+      @content;
     }
+  } @else {
+    @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+      @content;
+    }
+  }
 }
 
 $xl: 1200px;
@@ -29,1259 +24,1485 @@ $sm: 576px;
 $xs: 300px;
 
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
 
 $primary-color: #FFC702;
+$main-color: #3A3A3A;
 $secondary-color: #FFF;
 
 body {
-    background-color: #EDEEF0!important;
+  background-color: #EDEEF0 !important;
 }
 
 .navbar {
-    background-color: #383838;
+  background-color: #383838;
 }
 
 .navbar-brand {
-    float: left;
-    padding-top: 0;
-    padding-bottom: .25rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
+  float: left;
+  padding-top: 0;
+  padding-bottom: .25rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
 }
 
 .nav-link {
+  @include break($xs, $xl) {
+    font-size: 2rem;
+  }
+  color: #EAEBEE !important;
+  &:hover {
+    color: $primary-color !important;
+    text-decoration: none !important;
+  }
+}
 
-    color: #EAEBEE !important;
-    &:hover {
-        color: $primary-color !important;
-        text-decoration: none !important;
-    }
+/*BUTTON*/
+.find-tender-button {
+  background-color: $primary-color;
+  color: #3A3A3A;
+}
+
+.tender-button {
+  background-color: #3A3A3A;
+  color: #dedbe2;
+}
+
+/*WIDTH*/
+
+.w-5 {
+  width: 5%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+/*PADDING REM*/
+
+.p-1_25 {
+  padding: 1.25rem;
 }
 
 .img-mail {
-    margin-top: 0.5em;
-    @include break($xl) {
-        margin-left: 6em;
-    }
+  margin-top: 0.5em;
+  @include break($xl) {
+    margin-left: 6em;
+  }
 }
+
 .img-profile {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 .search {
-    height:25px;
-    margin-top: 0.3em;
-    margin-right: 2em;
-    background-color: #EAEBEE;
-    color: #000;
+
+  height: 25px;
+  margin-top: 0.3em;
+  margin-right: 2em;
+  background-color: #EAEBEE;
+  color: #000;
 }
 
 .search-mid {
-    background-color: #3A3A3A;
-    color: $primary-color;
-    border: none;
-    font-size: 1.2em;
-    width: 173px;
-    border-radius: 3px;
-    margin-left: -2em;
-    &:hover {
-        background-color: #575757;
-    }
-}
-
-.container-mid {
-    padding-right: 0px;
-    padding-left: 0px;
+  background-color: #3A3A3A;
+  color: $primary-color;
+  border: none;
+  font-size: 1.2em;
+  width: 173px;
+  border-radius: 3px;
+  margin-left: -2em;
+  &:hover {
+    background-color: #575757;
+  }
 }
 
 .container-mid nav {
-    background-color: $primary-color;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    height: 45px;
+  background-color: $primary-color;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  //height: 45px;
 }
-
-
-
-
-
 
 /* Ширина слайдера */
 #slider {
-    width: 40%;
-    background-color: $primary-color;
+  width: 40%;
+  background-color: $primary-color;
 }
-
-
-
 
 /* Контейнер слайдера */
 .ui-slider {
-    position: relative;
+  position: relative;
 }
-
-
-
 
 /* Ползунок */
 
-
-
 .ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    width: 14px; /* Задаем нужную ширину */
-    height: 14px; /* и высоту */
-    background: black; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
-    cursor: pointer
+  position: absolute;
+  z-index: 2;
+  width: 14px; /* Задаем нужную ширину */
+  height: 14px; /* и высоту */
+  background: black; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+  cursor: pointer
 }
+
 .ui-slider .ui-slider-range {
-    position: absolute;
-    z-index: 1;
-    font-size: .7em;
-    display: block;
-    border: 0;
-    overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
 }
+
 /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
-    height: 3px; /* задаем высоту согласно дизайна */
+  height: 5px; /* задаем высоту согласно дизайна */
 }
+
 /* позиционируем ползунки */
 .ui-slider-horizontal .ui-slider-handle {
-    top: -7px;
-    margin-left: -6px;
+  top: -7px;
+  margin-left: -6px;
 }
+
 .ui-slider-horizontal .ui-slider-range {
-    top: 0;
-    height: 100%;
+  top: 0;
+  height: 100%;
 }
+
 .ui-slider-horizontal .ui-slider-range-min {
-    left: 0;
+  left: 0;
 }
+
 .ui-slider-horizontal .ui-slider-range-max {
-    right: 0;
+  right: 0;
 }
+
 /* оформление полосы по которой ходит ползунок */
 .ui-widget-content {
-    border: 2px solid $secondary-color;
-    background: $secondary-color;
+  border: 2px solid $secondary-color;
+  background: $secondary-color;
 }
+
 /* оформление активного участка (между двумя ползунками) */
 .ui-widget-header {
-    border: 1px solid $secondary-color;
-    background: $secondary-color;
+  border: 1px solid $secondary-color;
+  background: $secondary-color;
 }
+
 /* скругление для полосы слайдера */
 .ui-corner-all {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
 #minCost {
-    margin-right: 7px;
-    font-size: 16px;
-    border: 0;
-    background-color: $primary-color;
-    text-align: right;
-    font-weight: 400;
-    width: 71px;
+  margin-right: 7px;
+  font-size: 16px;
+  border: 0;
+  background-color: $primary-color;
+  text-align: right;
+  font-weight: 400;
+  width: 83px;
+  color: #000000;
 }
 
 #maxCost {
-    margin-left: 10px;
-    margin-top: 2px;
-    border: 0;
-    background-color: $primary-color;
-    font-weight: 400;
-    font-size: 16px;
-    width: 100px;
+  margin-left: 10px;
+  margin-top: 2px;
+  border: 0;
+  background-color: $primary-color;
+  font-weight: 400;
+  font-size: 16px;
+  width: 83px;
+  color: #000000;
 }
 
 .mid-nav-input {
-    width: 200px !important;
-    height: 30px;
-    font-size: 1em;
+  font-size: 1em;
 }
-
 
 ///////////////CONTENT/////////////////
 
 .main {
-    margin-top: 1em;
-    margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .block {
-    background-color: $secondary-color;
-    border: 1px solid lightgray;
-    margin-bottom: 1em;
+  background-color: $secondary-color;
+  border: 1px solid lightgray;
+  margin-bottom: 1em;
+  min-height: 165px;
 }
 
 .block img {
+  @include break($xl) {
     float: left;
-    padding-right: 1.5em;
+    width: 120% !important;
+  }
 }
 
 .left {
+  @include break($xl) {
     padding-right: 5px;
+  }
 }
 
 .right {
+  @include break($xl) {
     padding-left: 5px;
+  }
+
+}
+
+.line-height-1-1em {
+  line-height: 1.1em;
 }
 
 .card-text {
-    line-height: 1.1em;
+  line-height: 1.1em;
+  padding-left: 10px;
+
+}
+
+.card-title {
+  padding-left: 10px;
+  font-weight: 400;
+  @include break($xs, $xl) {
+    text-align: center;
+  }
 }
 
 .card-text-article {
-    margin-bottom: 15px;
-    line-height: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.1em;
 }
 
 p {
-    margin-bottom: 8px;
+  //margin-bottom: 8px;
 }
 
 hr {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .comment {
-    background-color: #3A3A3A;
+  background-color: #3A3A3A;
+  color: $primary-color;
+  border-radius: 3px;
+  &:hover {
     color: $primary-color;
-    padding: 5px;
-    border-radius: 3px;
-    &:hover{
-        color: $primary-color;
-        text-decoration: none;
-        background-color: #575757;
-    }
+    text-decoration: none;
+    background-color: #575757;
+  }
+  padding: 0.5rem;
+  @include break($xs, $xl) {
+    padding: 1.20rem 5rem;
+  }
+}
+
+.btn-post-review {
+  @include break($xs, $xl) {
+    margin: 25px 0;
+    text-align: center;
+  }
 }
 
 .line {
-    background-color: $primary-color;
-    margin-top: -0.6em;
-    margin-bottom: 1em;
-}
-
-.card img {
-    width: 100%;
+  background-color: $primary-color;
+  margin-top: -0.6em;
+  margin-bottom: 1em;
 }
 
 .img-gallery {
+  @include break($xl) {
     height: 250px;
+  }
 }
 
 .card-block {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 162px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  & h6 {
+    padding-left: 10px;
+    @include break($xs, $xl) {
+      text-align: center;
+    }
+  }
 }
 
-.my-card-block {
-    padding: 10px 1.25em 10px 1.25em;
-    height: 100px;
-}
 .card {
-    margin-bottom: 1.25em;
-
+  margin-bottom: 1.25em;
+  & img {
+    width: 100%;
+  }
 }
 
 .my-card-footer {
+  @include break($xl) {
     margin-top: 26px;
+    padding-left: 10px;
+  }
 }
+
 ////////////FOOTER///////////////
 
 .footer {
-    background-color: #262626;
+  background-color: #262626;
+  color: $secondary-color;
+  @include break($md, $xl) {
+    height: 100px;
+  }
+  @include break($xs, $md) {
+    text-align: center;
+  }
+
+  & ul {
+    list-style-type: none;
+    white-space: nowrap;
+    padding-left: 0;
+    margin-top: 1em;
+  }
+
+  & a {
     color: $secondary-color;
-    @include break($md,$xl) {
-        height: 100px;
-    }
-    @include break($xs,$md) {
-        text-align: center;
-    }
+  }
 
-    & ul {
-        list-style-type: none;
-        white-space: nowrap;
-        padding-left: 0;
-        margin-top: 1em;
-    }
+  & a:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
 
-    & a {
-        color: $secondary-color;
-    }
+  & a:active {
+    text-decoration: none;
+    color: $primary-color;
+  }
 
-    & a:hover {
-        text-decoration: none;
-        color: $primary-color;
+  & .text {
+    white-space: nowrap;
+    line-height: 1.2em;
+    margin-left: -10px;
+    margin-top: 1em;
+  }
+  & .social {
+    color: $primary-color;
+    margin-top: 1em;
+    text-align: center;
+    @include break($xl) {
+      margin-left: 30px;
+      margin-right: -30px;
     }
-
-    & a:active {
-        text-decoration: none;
-        color: $primary-color;
+    @include break($md, $xl) {
+      text-align: right;
     }
-
-    & .text {
-        white-space: nowrap;
-        line-height: 1.2em;
-        margin-left: -10px;
-        margin-top: 1em;
-
+    @include break($xs) {
+      margin: 1em 0;
     }
-
-    & .social {
-      color: $primary-color;
-      margin-top: 1em;
-      text-align: center;
-      @include break($xl) {
-        margin-left: 30px;
-        margin-right: -30px;
-      }
-      @include break($md,$xl) {
-        text-align: right;
-      }
-
-      @include break($xs) {
-        margin: 1em 0;
-      }
+    @include break($sm, $lg) {
+      margin-left: auto;
     }
-
-    & .left-ul {
-        @include break($xs,$xl) {
-            display: none;
-        }
+  }
+  & .left-ul {
+    @include break($xs, $xl) {
+      display: none;
     }
-    & .right-ul {
-        @include break($xs,$xl) {
-            display: none;
-        }
+  }
+  & .right-ul {
+    @include break($xs, $xl) {
+      display: none;
     }
-    & .logo-footer {
-        margin-left: auto;
-        @include break($xs,$xl) {
-            display: none;
-        }
+  }
+  & .logo-footer {
+    margin-left: auto;
+    @include break($xs, $xl) {
+      display: none;
     }
+  }
 }
 
 .allgid-logo {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .copyright {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-
-
 .right-ul {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 
 .logo {
-    border-radius: 4px;
-    background-color: $secondary-color;
-    @include break($md,$xl) {
-        margin-left: 8em;
-    }
+  border-radius: 4px;
+  background-color: $secondary-color;
+  @include break($md, $xl) {
+    margin-left: 8em;
+  }
 
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 /////////////client-card//////////
 
 .company-logo {
-    position: absolute;
-    z-index: 99999;
-    @include break($xl) {
-        top: 8.5em;
-        left: 3em;
-    }
-    @include break($xs,$xl) {
-        width: 75px;
-    }
+  position: absolute;
+  z-index: 99999;
+  @include break($xl) {
+    bottom: -30px;
+    left: 3em;
+  }
+  @include break($xs, $xl) {
+    position: static;
+    width: 50% !important;
+  }
 }
 
 .client-card-block-header {
-    padding: 10px 1.25em 10px 1.25em;
+  padding: 10px 1.25em 0 1.25em;
 
-    & input{
-        @include break($xl) {
-            float: right;
-            margin-right: 10px;
-        }
+  & input {
+    @include break($xl) {
+      float: right;
+      margin-right: 10px;
     }
+  }
 }
 
 .button {
-    background-color: #383838;
-    border-radius: 3px;
-    color: $primary-color;
-    border: none;
-    width: 150px;
+  background-color: #383838;
+  border-radius: 3px;
+  color: $primary-color;
+  border: none;
+  width: 100%;
+  @include break($xl) {
+    width: 150px !important;
+  }
 
-    &:hover {
-        background-color: #575757;
-        color: $primary-color;
-    }
+  &:hover {
+    background-color: #575757;
+    color: $primary-color;
+  }
+}
+
+.w-90-xs-xl {
+  @include break($xs, $xl) {
+    width: 90%;
+  }
 }
 
 ol li {
-    line-height: 1.2em;
+  line-height: 1.2em;
 }
 
-.card-img-bottom {
-    width: 25em!important;
-    margin: 5px;
-}
 .card-block-right {
-    padding: 1.25em;
-    background-color: #3A3A3A;
-    color: $secondary-color;
-    & span {
-        color:#FFC702;
-    }
+  padding: 1.25em;
+  background-color: #3A3A3A;
+  color: $secondary-color;
+  & span {
+    color: #FFC702;
+  }
 
-    & ul li {
-        line-height: 1.2em;
-    }
+  & ul li {
+    line-height: 1.2em;
+  }
 }
 
 hr.white {
-    background-color: white;
+  background-color: white;
 }
 
 hr.gray {
-    background-color: #CACACA;
-    width: 90%;
+  background-color: #CACACA;
+  width: 90%;
 }
 
 .card-title-right {
-    margin-bottom: .75rem;
-    color: $primary-color;
+  margin-bottom: .75rem;
+  color: $primary-color;
 }
 
-
 .client-card-block {
-    padding: 10px 1.25em 10px 1.25em;
+  padding: 10px 1.25em 10px 1.25em;
 }
 
 .content-sale {
-    background-color: #262626;
-    color: $primary-color;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    padding: 2px;
-    & span {
-        margin-left: 3px;
-        font-size: 18px;
-    }
+  background-color: #262626;
+  color: $primary-color;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 2px;
+  & span {
+    margin-left: 3px;
+    font-size: 18px;
+  }
 }
 
 .definition {
-    margin-left: 18px;
-    margin-top: 7px;
-    line-height: 14px;
+  margin-left: 18px;
+  margin-top: 7px;
+  line-height: 14px;
 }
 
 .price {
-    margin-left: 18px;
-    line-height: 18px;
+  margin-left: 18px;
+  line-height: 18px;
 }
 
-.opinion{
-    & img{
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        float: left;
+.opinion {
+  & img {
+    @include break($xs, $xl) {
+      width: 50%;
     }
-    padding: 10px;
-
-    input {
-
-    }
+  }
 }
 
 .sidebar-sale {
-    margin-bottom: 15px;
-    & img {
-        width: 100%;
-    }
+  margin-bottom: 15px;
+  margin-top: 20px;
+  & img {
+    width: 100%;
+  }
 }
 
 .client-card-header {
-    display: inline-block;
-    margin-left: 10px;
-    line-height: 1em;
+  display: inline-block;
+  //margin-left: 10px;
+  line-height: 1em;
 }
 
 .sale-card-body {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .sale-date {
-    font-size: 10px;
-    color: gray;
+  font-size: 10px;
+  color: gray;
 }
 
 .gallery {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .client-buttons-center {
-    @include break($xl) {
-        margin-top: 10px;
-        margin-left: 260px;
-    }
+  @include break($xl) {
+    margin-top: 10px;
+    margin-left: 260px;
+  }
 
 }
 
 .text {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .contacts {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .my-card-block-article {
-    padding: 10px 1.25em 10px 1.25em;
+  padding: 10px 1.25em 10px 1.25em;
 }
 
 /////////////Доска-обьявлений//////////////
 
 .sda {
-    color: black;
+  color: black;
 }
+
 .sda-card {
-    position: relative;
-    display: block;
-    margin-bottom: .75rem;
-    border: 1px solid #CACACA;
-    border-radius: .25rem;
+  position: relative;
+  display: block;
+  margin-bottom: .75rem;
+  border: 1px solid #CACACA;
+  border-radius: .25rem;
 
-    &.orange {
-        background-color: #FFBF07;
-    }
-    &.white {
-        background-color: #FFFFFF;
-    }
-    &.gray {
-        background-color: #CACACA;
-    }
+  &.orange {
+    background-color: #FFBF07;
+  }
+  &.white {
+    background-color: #FFFFFF;
+  }
+  &.gray {
+    background-color: #CACACA;
+  }
 }
 
-.sda-header {
-    padding: 10px;
-}
+/*.sda-header {
+  padding: 10px;
+}*/
 
 .sda-img {
-    margin-left: 10px;
-    & img {
-        border: 7px solid white;
-        border-radius: 3px;
-    }
+  & img {
+    border: 7px solid white;
+    border-radius: 3px;
+  }
 }
 
 .sda-buttons {
-    margin-top: 15px;
-    margin-left: 10px;
-    & input {
-        margin-right: 10px;
-    }
+  margin-top: 15px;
+  //margin-left: 10px;
+  & input {
+    margin-right: 10px;
+  }
 }
 
 hr.black {
-    background-color: black;
-    width: 97%;
-    margin-top: 14px;
+  background-color: black;
+  width: 97%;
+  margin-top: 14px;
 }
 
 .sda-footer {
-    margin-left: 10px;
-    margin-bottom: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .sda-time {
-    display: inline;
-    margin-left: 5px;
+  display: inline;
+  margin-left: 5px;
 }
 
 .sda-caption {
-    display: inline;
-    margin-left: 66px;
+  display: inline;
+  margin-left: 66px;
 }
 
 .img-border {
-    display: inline-block;
-    border-radius: 3px;
-    border: 1px solid #CACACA;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #CACACA;
 }
 
 .sda-card-text {
-    margin: 10px;
-    line-height: 1em;
-    white-space: nowrap;
+  //margin: 10px;
+  line-height: 1em;
+  white-space: normal;
 }
 
 .text_area {
-    resize: none;
-    padding-left: 10px;
-    height: 100px;
-    border: 1px solid #CACACA;
-    margin: 10px;
-    width: 97%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  resize: none;
+  padding-left: 10px;
+  height: 100px;
+  border: 1px solid #CACACA;
+  margin: 10px;
+  width: 97%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .my-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    & input {
-        margin-bottom: 10px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  & input {
+    margin-bottom: 10px;
+  }
 }
 
 .sda-social {
-    margin-left: 17px;
-    margin-bottom: 10px;
+
+  & a {
+    & img {
+      width: 23px;
+      @include break($xs, $xl) {
+        width: 35px;
+        margin: 7px;
+      }
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  @include break($xs, $xl) {
+    text-align: center;
+  }
 }
 
 //////////////Подрядчики//////////////
 
 .yandex-map {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .fon {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .head-card-hr {
-    background-color: black;
-    width: 100%;
-    margin-top: 0;
+  background-color: black;
+  width: 100%;
+  margin-top: 0;
 }
 
 .head-card {
-    position: relative;
-    display: block;
-    margin-bottom: .75rem;
-    background-color: $primary-color;
-    border: 1px solid #e5e5e5;
-    border-radius: .25rem;
+  position: relative;
+  display: block;
+  margin-bottom: .75rem;
+  background-color: $primary-color;
+  border: 1px solid #e5e5e5;
+  border-radius: .25rem;
 }
 
 .contractors-card-title {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 .search-button {
-    background-color: #3A3A3A;
-    color: #FFC702;
-    border: none;
-    width: 173px;
-    border-radius: 3px;
+  background-color: #3A3A3A;
+  color: #FFC702;
+  border: none;
+  @include break($xl) {
+    width: 173px !important;
+  }
+  border-radius: 3px;
 }
 
 .contractors-form-group {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contractors-card-text {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contractors-card-block {
-    padding: 1.25rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding: 1.25rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .no-padding {
-    padding: 0;
+  padding: 0;
 }
 
 .contractors-sda {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .pagination {
-    display:inline-block;
+  display: inline-block;
 }
 
 .pagination {
-    padding-left:0;
-    margin:20px 0;
-    border-radius:4px;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
 }
 
-.pager li, .pagination>li {
-    display:inline;
+.pager li, .pagination > li {
+  display: inline;
 }
 
-.pagination>li>a, .pagination>li>span {
-    position:relative;
-    float:left;
-    padding:6px 12px;
-    line-height:1.42857143;
-    text-decoration:none;
-    color: black;
-    background-color: $primary-color;
-    margin-left:-1px;
+.pagination > li > a, .pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: black;
+  background-color: $primary-color;
+  margin-left: -1px;
 }
 
-.badge,.label {
-    line-height:1;
+.badge, .label {
+  line-height: 1;
 }
 
-.pagination>li:first-child>a, .pagination>li:first-child>span {
-    margin-left:0;
-    border-bottom-left-radius:4px;
-    border-top-left-radius:4px;
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
-.pagination>li:last-child>a, .pagination>li:last-child>span {
-    border-bottom-right-radius:4px;
-    border-top-right-radius:4px;
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
-.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
-    color: black;
-    background-color: $primary-color;
-    border-color:#ddd;
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+  color: black;
+  background-color: $primary-color;
+  border-color: #ddd;
 }
 
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-    z-index:2;
-    color: #fff;
-    background-color: $primary-color;
-    border-color: #337ab7;
-    cursor:default;
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  z-index: 2;
+  color: #fff;
+  background-color: $primary-color;
+  border-color: #337ab7;
+  cursor: default;
 }
 
-.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
-    color: black;
-    background-color: $primary-color;
-    border-color:#ddd;
-    cursor:not-allowed;
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+  color: black;
+  background-color: $primary-color;
+  border-color: #ddd;
+  cursor: not-allowed;
 }
 
-.pagination-lg>li>a, .pagination-lg>li>span {
-    padding:10px 16px;
-    font-size:18px;
+.pagination-lg > li > a, .pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
 }
 
-.pagination-lg>li:first-child>a, .pagination-lg>li:first-child>span {
-    border-bottom-left-radius:6px;
-    border-top-left-radius:6px;
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
-.pagination-lg>li:last-child>a, .pagination-lg>li:last-child>span {
-    border-bottom-right-radius:6px;
-    border-top-right-radius:6px;
+.pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
-.pagination-sm>li>a, .pagination-sm>li>span {
-    padding:5px 10px;
-    font-size:12px;
+.pagination-sm > li > a, .pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
 }
 
-.pagination-sm>li:first-child>a, .pagination-sm>li:first-child>span {
-    border-bottom-left-radius:3px;
-    border-top-left-radius:3px;
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
-.pagination-sm>li:last-child>a, .pagination-sm>li:last-child>span {
-    border-bottom-right-radius:3px;
-    border-top-right-radius:3px;
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .zoomControl {
-    position: fixed;
-    width: 49px;
-    bottom: 50px;
-    right: 20px;
-    text-align: center;
+  position: fixed;
+  width: 49px;
+  bottom: 50px;
+  right: 20px;
+  text-align: center;
+  display: block;
+  .zoom-control {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+    background: #fff;
+    border: 3px solid #7362b0;
+    overflow: hidden;
+    vertical-align: top;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 
-    .zoom-control {
-        position: relative;
-        z-index: 2;
-        cursor: pointer;
-        width: 23px;
-        height: 23px;
-        background: #fff;
-        border: 3px solid #7362b0;
-        overflow: hidden;
-        vertical-align: top;
-        padding: 5px;
-        margin: 0 auto;
-        border-radius: 50px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    .zoom-icon-in {
+      position: relative;
+      height: 100%;
+      width: 100%;
 
-        .zoom-icon-in {
-            position: relative;
-            height: 100%;
-            width: 100%;
-
-            &:before {
-                content: '';
-                position: absolute;
-                height: 3px;
-                width: 23px;
-                top: 1px;
-                left: -12px;
-                background-color: #7362b0;
-                border-radius: 2px;
-            }
-
-            &:after {
-                content: '';
-                position: absolute;
-                height: 23px;
-                width: 3px;
-                top: -9px;
-                left: -2px;
-                background-color: #7362b0;
-                border-radius: 2px;
-            }
-        }
-
-        .zoom-icon-out {
-            position: relative;
-            height: 100%;
-            width: 100%;
-
-            &:before {
-                content: '';
-                position: absolute;
-                height: 3px;
-                width: 15px;
-                top: 3px;
-                left: -3px;
-                background-color: #7362b0;
-                border-radius: 2px;
-            }
-        }
-
-        &.zoom-in {
-            padding: 20px;
-        }
-
-        &:hover {
-            border-color: #f83d76;
-
-            .zoom-icon-in:before,
-            .zoom-icon-in:after,
-            .zoom-icon-out:before {
-                background-color: #f83d76;
-            }
-        }
-    }
-
-    .zoom-separator {
-        position: relative;
-        z-index: 1;
-        width: 13px;
+      &:before {
+        content: '';
+        position: absolute;
         height: 3px;
-        margin: -1px auto;
-        overflow: hidden;
+        width: 23px;
+        top: 1px;
+        left: -12px;
         background-color: #7362b0;
-        vertical-align: top;
+        border-radius: 2px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 23px;
+        width: 3px;
+        top: -9px;
+        left: -2px;
+        background-color: #7362b0;
+        border-radius: 2px;
+      }
     }
+
+    .zoom-icon-out {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 15px;
+        top: 3px;
+        left: -3px;
+        background-color: #7362b0;
+        border-radius: 2px;
+      }
+    }
+
+    &.zoom-in {
+      padding: 20px;
+    }
+
+    &:hover {
+      border-color: #f83d76;
+
+      .zoom-icon-in:before,
+      .zoom-icon-in:after,
+      .zoom-icon-out:before {
+        background-color: #f83d76;
+      }
+    }
+  }
+
+  .zoom-separator {
+    position: relative;
+    z-index: 1;
+    width: 13px;
+    height: 3px;
+    margin: -1px auto;
+    overflow: hidden;
+    background-color: #7362b0;
+    vertical-align: top;
+  }
 }
 
 ///////////Тендеры//////////////
 
 .tender-img {
-    background-color: black;
-    float: left;
-    width: 190px;
-    height: 227px;
-    padding-left: 10px;
-    padding-top: 30px;
-}
-
-.tender-select {
-    height: 30px;
-    width: 300px;
-    margin-left: -16px;
-    border: none;
+  background-color: black;
 }
 
 .tender-white {
-    background-color: white;
-    width: 95%;
-    margin-left: 0;
+  background-color: white;
+  width: 95%;
+  margin-left: 0;
 }
 
 .row.fon {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .tender-card-block {
-    background-color: $primary-color;
-    padding-left: 205px;
-    padding-top: 10px;
-    margin-bottom: 15px;
+  background-color: $primary-color;
 }
 
 .form-title {
-    margin-bottom: 10px;
-    & input {
-        border: none;
-        border-radius: 2px;
-        width: 500px;
-        padding-left: 5px;
-    }
+  margin-bottom: 10px;
+  & input {
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    padding-left: 5px;
+  }
 }
 
 .form-textarea {
-    margin-bottom: 10px;
-    & textarea {
-        border: none;
-        border-radius: 2px;
-        width: 500px;
-        resize: none;
-        padding-left: 5px;
-    }
-}
-
-.tender-button {
-    background-color: #3A3A3A;
-    color: #FFC702;
+  margin-bottom: 10px;
+  & textarea {
     border: none;
-    font-size: 1.2em;
-    width: 173px;
-    border-radius: 3px;
-    margin-right: 10px;
+    border-radius: 2px;
+    width: 100%;
+    resize: none;
+    padding-left: 5px;
+  }
 }
 
 .find-tender {
-    & nav {
-        background-color: #3A3A3A;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
-        height: 45px;
-    }
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-bottom: 15px;
-}
+  & nav {
+    background-color: #3A3A3A;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
 
-.find-tender-select {
-    margin-left: -23px;
-}
-
-.find-tender-button {
-    background-color: $primary-color;
-    color: #3A3A3A;
-    border: none;
-    font-size: 1.2em;
-    width: 173px;
-    border-radius: 3px;
-    margin-left: -66px;
 }
 
 .minCostTender {
-    margin-left: -15px;
-    margin-right: 5px;
-    font-size: 16px;
-    border: 0;
-    background-color: #3A3A3A;
-    font-weight: 400;
-    width: 72px;
-    color: white;
+
+  margin-right: 5px;
+  font-size: 16px;
+  border: 0;
+  background-color: #3A3A3A;
+  font-weight: 400;
+  width: 83px;
+  color: white;
 }
 
 .maxCostTender {
-    margin-left: 15px;
-    font-size: 16px;
-    border: 0;
-    background-color: #3A3A3A;
-    font-weight: 400;
-    width: 72px;
-    color: white;
-}
-
-.slider {
-    margin-left: -10px;
+  font-size: 16px;
+  border: 0;
+  background-color: #3A3A3A;
+  font-weight: 400;
+  width: 83px;
+  color: white;
 }
 
 hr.orange {
-    background-color: $primary-color;
+  background-color: $primary-color;
 }
 
 .tender-fon {
-    position: relative;
-    z-index: 1;
-    height: 210px;
+  position: relative;
+  z-index: 1;
+
 }
 
 .tender-block {
-    background-color: #FFF;
-    border: 1px solid lightgray;
-    margin-bottom: 1em;
+  background-color: #FFF;
+  border: 1px solid lightgray;
+  //margin-bottom: 1em;
 }
 
 .tender-more {
+  color: black;
+  font-weight: 900;
+  &:hover {
+    text-decoration: none;
     color: black;
-    font-weight: 900;
-    &:hover{
-        text-decoration: none;
-        color: black;
-    }
+  }
 }
 
 .tender-card-header {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .tender-date {
-    margin-left: 20px;
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .tender-accept {
-    margin-left: 27px;
+  margin-left: 27px;
 }
 
 .tender-card-block-text {
-    padding-top: 10px;
-    padding-left: 9px;
+  padding-top: 10px;
+  padding-left: 9px;
 }
 
 .tender-card-text {
-    font-size: 15px;
-    line-height: 0.9em;
+  font-size: 15px;
+  line-height: 0.9em;
 }
 
 .attr {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.itog{
-    background-color: $primary-color;
-    padding-left: 5px;
-    margin-left: -5px;
-    border-radius: 3px;
-    height: 25px;
+.itog {
+  background-color: $primary-color;
+  padding-left: 5px;
+  margin-left: -5px;
+  border-radius: 3px;
 }
 
 ////////////////////Project//////////////////////
 
 .project-card-block {
-
-    padding: 10px 0;
-
+  padding: 10px 0;
 }
 
-
 .project-itog {
-    background-color: #434343;
-    color: $secondary-color;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    padding: 2px;
+  background-color: #434343;
+  color: $secondary-color;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 2px;
+  font-size: 18px;
+
+  & span {
+    margin-left: 7px;
+    color: $primary-color;
     font-size: 18px;
-    & span {
-        margin-left: 7px;
-        color: $primary-color;
-        font-size: 18px;
-    }
+  }
+  @include break($xs, $xl) {
+    text-align: center;
+  }
 }
 
 .project-button {
-    background-color: $primary-color;
-    border-radius: 3px;
-    font-size: 15px;
-    color: #383838;
-    height: 21px;
-    border: none;
-    width: 150px;
-    float: right;
-    margin-top: 3px;
-    margin-right: 7px;
+  background-color: $primary-color;
+  border-radius: 3px;
+  font-size: 15px;
+  color: #383838;
+  height: 21px;
+  border: none;
+  width: 150px;
+  float: right;
+  margin-top: 3px;
+  margin-right: 7px;
+  @include break($xs, $xl) {
+    width: 90%;
+    height: 27px;
+    float: none;
+  }
 }
 
 /*Настоойка  размеров слайдера*/
 
-.slider-img-array img{
-    @include break($xl){
-        width: 128px;
-        height: 78px;
-        margin-top: 11px;
-    }
-
+.slider-img-array img {
+  @include break($xl) {
+    width: 128px;
+    height: 78px;
     margin-top: 11px;
-}
+  }
 
+  margin-top: 11px;
+}
 
 .slider-img-array {
-    @include break($xs,$xl) {
-        max-width: 100%;
-        flex: 0 0 100%;
+  @include break($xs, $xl) {
+    max-width: 100%;
+    flex: 0 0 100%;
 
-    }
+  }
 }
 
-
-
 .slider-img-main {
-    padding: 0 0 0 14px;
-    @include break($xs, $xl){
-        display: none;
-    }
-    @include break($lg) {
-        margin: auto;
-    }
+  padding: 0 0 0 14px;
+  @include break($xs, $xl) {
+    display: none;
+  }
+  @include break($lg) {
+    margin: auto;
+  }
+}
+
+.slick-list {
+  @include break($xs, $xl) {
+    margin-bottom: 10px !important;
+  }
 }
 
 /////////////
 .client-buttons {
-    @include break($xs,$md) {
-        text-align: center;
-    }
+  @include break($xs, $md) {
+    text-align: center;
+  }
+
 }
 
-.btn-mobile {
-    margin-right: auto;
-}
-
-/*Место расположение кнпки слайдера*/
+/*Настройки кнпки слайдера*/
+.slick-prev,
 .slick-next {
-    top: auto !important;
-    right: 84px !important;
-    @include break($xs, $xl) {
-        position: static !important;
-        top: auto !important;
-        margin: 0 auto !important;
+  @include break($xs, $xl) {
+
+    //opacity: .70 !important;
+    //background-color: #FFC702 !important;
+    background-size: 30px;
+    height: 20px !important;
+    width: 85px !important;
+    //line-height: 0px !important;
+    //font-size: 0px !important;
+    //cursor: pointer !important;
+    //border-radius: 20px;
+
+    //-webkit-transform: translate(0) !important;
+    //-ms-transform: translate(0) !important;
+    //transform: translate(0) !important;
+
+    &:hover, &:focus {
+      opacity: 1.50 !important;
+      outline: none !important;
+      //background: #121212 !important;
+      color: transparent !important;
+
     }
+
+    &:before {
+      font-size: 36px !important;
+      //line-height: 1 !important;
+      //color: #555555 !important;
+
+      // -webkit-font-smoothing: antialiased !important;
+      // -moz-osx-font-smoothing: grayscale !important;
+    }
+  }
 }
 
-
-
-.slick-prev {
+.slider-img-array {
+  & .slick-prev {
     top: -11px !important;
     left: 55px !important;
+
     @include break($xs, $xl) {
-        position: static !important;
-        top: -14px !important;
-        margin: 0 auto !important;
+      position: static !important;
+
+      top: -14px !important;
+      margin: 0 auto !important;
+      &:before {
+
+        //content: "" !important;
+      }
     }
+  }
+
+}
+
+.slider-img-array {
+  & .slick-next {
+    top: auto !important;
+    right: 84px !important;
+
+    @include break($xs, $xl) {
+      position: static !important;
+      top: auto !important;
+      margin: 0 auto !important;
+      &:before {
+        //content: "" !important;
+      }
+    }
+  }
 }
 
 ////////////////////tenders-next///////////////
 
 .tender-button-2 {
-    border: none;
-    font-size: 1.2em;
-    width: 170px;
-    border-radius: 3px;
-    &.top {
-        background-color: #FFC702;
-        color: #3A3A3A;
-        margin-top: 3px;
-    }
-    &.bot {
-        background-color: #3A3A3A;
-        color: $primary-color;
-    }
+  border: none;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 3px;
+  &.top {
+    background-color: #FFC702;
+    color: #3A3A3A;
+    margin-top: 3px;
+  }
+  &.bot {
+    background-color: #3A3A3A;
+    color: $primary-color;
+  }
 }
 
-.took-part{
-    background-color: $primary-color;
-    color: black;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    padding: 2px;
+.took-part {
+  background-color: $primary-color;
+  color: black;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 2px;
+  font-size: 18px;
+  & span {
+    margin-left: 7px;
     font-size: 18px;
-    & span {
-        margin-left: 7px;
-        font-size: 18px;
-        font-weight: 900;
-    }
+    font-weight: 900;
+  }
 }
 
 .tender-card-right {
-    background-color: #3A3A3A;
-    height: 209px;
-    color: white;
-    & div{
-        padding-left: 9px;
-        padding-top: 5px;
-    }
+  background-color: #3A3A3A;
+  //height: 209px;
+  color: white;
+
 }
 
 .tender-title {
-    color: $secondary-color;
-    font-size: 17px;
+  color: $secondary-color;
+  font-size: 17px;
 }
 
 .date {
-    color: $primary-color;
+  color: $primary-color;
 }
 
 .offering {
-    color: $secondary-color;
-    font-weight: 900;
+  color: $secondary-color;
+  font-weight: 900;
 }
 
 .amount {
-    color: $primary-color;
+  color: $primary-color;
 }
 
 .budget {
+  @include break($xl) {
+    position: absolute;
+    bottom: 0;
+  }
+
+  & > div {
+    @include break($xs, $xl) {
+      width: 60%;
+    }
+    @include break($sm, $xl) {
+      width: 36%;
+    }
     background-color: #FFC702;
     color: black;
+    width: 100%;
     border-radius: 3px;
     margin-right: 9px;
-    margin-top: 80px;
     & span {
-        font-weight: 900;
+      font-weight: 900;
     }
+  }
 }
 
 ////////////////////HEADER/////////////////
 
 .main-header {
-    .mail-profile {
-        @include break($xs) {
-            text-align: center;
-        }
+  .icon-mail-profile {
+    @include break($xs, $xl) {
+      display: none;
     }
+  }
+  & .mail-profile {
+    @include break($xs, $xl) {
+      display: block;
+    }
+  }
+
+  & .header-logo {
+    @include break($xs, $xl) {
+      display: flex;
+      justify-content: center;
+    }
+    & img {
+      @include break($xs, $xl) {
+        width: 100%;
+
+      }
+    }
+  }
+  & .btn-mobile {
+    @include break($xs, $xl) {
+      margin: 0 auto;
+      padding: 17px 40px;
+    }
+  }
+  & .input-search {
+    & input {
+      @include break($xs, $xl) {
+        margin: 0 auto;
+      }
+
+    }
+  }
 }
+
+.slider-btn > * {
+  float: left;
+}
+
+.slider-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 14px; /* Задаем нужную ширину */
+  height: 14px; /* и высоту */
+
+  border: none;
+  cursor: pointer
+}
+
+.ui-yellow .ui-slider-handle {
+  background-color: #FFC702;
+}
+
+.suka-input-perenesi-text {
+  @include break($xs, $xl) {
+    height: 70px;
+    font-size: 1.1em;
+  }
+}
+
+.suka-input-perenesi-text::-webkit-input-placeholder {
+  white-space: normal;
+
+}
+
+/*место расположение Рейтинга (Звёзд)*/
+
+.rating-sm {
+  @include break($xs, $xl) {
+    float: none !important;
+
+  }
+}
+
+.fivestar {
+  @include break($xs, $xl) {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+
+
+/*Размеры звёзд*/
+.rating-stars {
+  & .star {
+    & .glyphicon {
+      font-size: 1.8em;
+    }
+  }
+}
+
 

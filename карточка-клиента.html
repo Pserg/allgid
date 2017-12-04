@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-    <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/star-rating.min.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="plugins/slick/slick/slick.css">
     <link rel="stylesheet" href="plugins/slick/slick/slick-theme.css">
 
-    <link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css"/>
     <title>Доска объявлений</title>
 </head>
 <body>
@@ -25,21 +25,25 @@
 
 <!-- Header -->
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <img class="company-logo" src="img/sozidant.jpg" width="200px">
-            <div class="card">
-                <img src="img/dom-iz-dereva.jpg">
-                <div class="client-card-block-header">
-                    <div class="row">
-                        <div class="col-md-8"><h5 style="text-align: center">ООО СК "ЛСС ДОМ"</h5></div>
-                        <div class="col-md-4 client-buttons">
-                            <input class="button" type="submit" value="Оставить отзыв">
-                            <input class="button" type="submit" value="Задать вопрос">
+    <div class="container no-padding pt-2 pt-xl-0">
+        <div class="col-xl-12 text-center card no-padding ">
+
+            <img src="img/dom-iz-dereva.jpg " class="d-none d-xl-block">
+            <div class="col-xl-2">
+                <img class="company-logo py-xl-0 py-1 w-100" src="img/sozidant.jpg">
+            </div>
+            <div class=" client-card-block-header pb-4 pb-xl-0">
+                <div class="row">
+                    <div class="col-xl-8 text-center"><h5>ООО СК "ЛСС ДОМ"</h5></div>
+                    <div class="col-xl-4 ">
+                        <div class="client-buttons">
+                            <input class="button mb-3 w-75 py-1 py-xl-0" type="submit" value="Оставить отзыв">
+                            <input class="button w-75 py-1 py-xl-0" type="submit" value="Задать вопрос">
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -66,26 +70,33 @@
                         <li>По желанию заказчика мы разрабатываем проекты домов с нуля с последующей 3D визуализацией!</li>
                         <li>При строительстве мы используем только проверенные временем материалы и оборудование.</li>
                         <li>Мы являемся партнером лучшего авторизованного сервисного центра Viessmann в России! Можете не сомневаться, что зимой и летом в вашем доме будет комфортно,
-                            тепло и уютно и при этом не нужно будет тратить баснословные деньги на излишнюю энергию (это относится и к тепловой и электрической энергии)</li>
+                            тепло и уютно и при этом не нужно будет тратить баснословные деньги на излишнюю энергию (это относится и к тепловой и электрической энергии)
+                        </li>
                         <li>Нас уже выбрали своим застройщиком многие посёлки в Московской области, такие как Новорижские ключи, Романовские дачи, Новая деревня и др.</li>
                     </ol>
                 </div>
-                <img class="card-img-bottom" src="img/office-2.png" width="200px">
-                <img class="card-img-bottom" src="img/office.png" width="200px">
+                <div class="row p-3">
+                    <div class="col-xl-6 pr-1">
+                        <img class=" d-none d-xl-block" src="img/office-2.png">
+                    </div>
+                    <div class="col-xl-6 pl-1">
+                        <img class=" d-none d-xl-block" src="img/office.png">
+                    </div>
+                </div>
             </div>
-            <div class="card">
+            <div class="card d-none d-xl-block">
                 <div class="content-sale">
                     <span>Акции компании</span>
                 </div>
                 <img src="img/sale.jpg" width="100%" height="246">
             </div>
             <div class="row">
-                <div class="col-md-6 left">
+                <div class="col-lg-6 left ">
                     <div class="card">
-                        <img class="card-img-top" src="img/house-3.jpg">
+                        <img class="" src="img/house-3.jpg">
                         <div class="card-body">
                             <p class="definition">Деревянный дом Белая дача<br>
-                            100.8м2 &nbsp;&nbsp;&nbsp; 8х9,5м</p>
+                                100.8м2 &nbsp;&nbsp;&nbsp; 8х9,5м</p>
                             <hr class="gray">
                             <div class="price">
                                 Цена
@@ -94,21 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 right">
-                    <div class="card">
-                        <img class="card-img-top" src="img/house-3.jpg">
-                        <div class="card-body">
-                            <p class="definition">Деревянный дом Белая дача<br>
-                                100.8м2  &nbsp;&nbsp;&nbsp;  8х9,5м</p>
-                            <hr class="gray">
-                            <div class="price">
-                                Цена
-                                <h5>1 314 700 руб.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 left">
+                <div class="col-lg-6 right ">
                     <div class="card">
                         <img class="card-img-top" src="img/house-3.jpg">
                         <div class="card-body">
@@ -122,21 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 right">
-                    <div class="card">
-                        <img class="card-img-top" src="img/house-3.jpg">
-                        <div class="card-body">
-                            <p class="definition">Деревянный дом Белая дача<br>
-                                100.8м2  &nbsp;&nbsp;&nbsp;  8х9,5м</p>
-                            <hr class="gray">
-                            <div class="price">
-                                Цена
-                                <h5>1 314 700 руб.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 left">
+                <div class="col-md-6 left d-none d-xl-block">
                     <div class="card">
                         <img class="card-img-top" src="img/house-3.jpg">
                         <div class="card-body">
@@ -150,21 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 right">
-                    <div class="card">
-                        <img class="card-img-top" src="img/house-3.jpg">
-                        <div class="card-body">
-                            <p class="definition">Деревянный дом Белая дача<br>
-                                100.8м2  &nbsp;&nbsp;&nbsp;  8х9,5м</p>
-                            <hr class="gray">
-                            <div class="price">
-                                Цена
-                                <h5>1 314 700 руб.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 left">
+                <div class="col-md-6 right d-none d-xl-block">
                     <div class="card">
                         <img class="card-img-top" src="img/house-3.jpg">
                         <div class="card-body">
@@ -178,12 +147,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 right">
+                <div class="col-md-6 left d-none d-xl-block">
                     <div class="card">
                         <img class="card-img-top" src="img/house-3.jpg">
                         <div class="card-body">
                             <p class="definition">Деревянный дом Белая дача<br>
-                                100.8м2  &nbsp;&nbsp;&nbsp;  8х9,5м</p>
+                                100.8м2 &nbsp;&nbsp;&nbsp; 8х9,5м</p>
+                            <hr class="gray">
+                            <div class="price">
+                                Цена
+                                <h5>1 314 700 руб.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 right d-none d-xl-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/house-3.jpg">
+                        <div class="card-body">
+                            <p class="definition">Деревянный дом Белая дача<br>
+                                100.8м2 &nbsp;&nbsp;&nbsp; 8х9,5м</p>
+                            <hr class="gray">
+                            <div class="price">
+                                Цена
+                                <h5>1 314 700 руб.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 left d-none d-xl-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/house-3.jpg">
+                        <div class="card-body">
+                            <p class="definition">Деревянный дом Белая дача<br>
+                                100.8м2 &nbsp;&nbsp;&nbsp; 8х9,5м</p>
+                            <hr class="gray">
+                            <div class="price">
+                                Цена
+                                <h5>1 314 700 руб.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 right d-none d-xl-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/house-3.jpg">
+                        <div class="card-body">
+                            <p class="definition">Деревянный дом Белая дача<br>
+                                100.8м2 &nbsp;&nbsp;&nbsp; 8х9,5м</p>
                             <hr class="gray">
                             <div class="price">
                                 Цена
@@ -195,23 +206,23 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-md-offset-4" style="margin-left: 274px">
-                        <input class="button" type="submit" value="Все проекты">
+                    <div class="col-xl-3 col-xl-offset-4 m-auto">
+                        <input class="button w-100 py-xl-0 py-1" type="submit" value="Все проекты">
                     </div>
                 </div>
             </div>
 
 
             <div class="card gallery">
-                <div class="client-card-block">
+                <div class="client-card-block d-none d-xl-block">
                     <h5 class="card-title">Фотогалерея</h5>
                     <hr>
                     <div class="multiple-items">
-                        <div class="col-md-4"><img src="img/house-4.jpg" width="200"></div>
-                        <div class="col-md-4"><img src="img/house-4.jpg" width="200"></div>
-                        <div class="col-md-4"><img src="img/house-4.jpg" width="200"></div>
-                        <div class="col-md-4"><img src="img/house-4.jpg" width="200"></div>
-                        <div class="col-md-4"><img src="img/house-4.jpg" width="200"></div>
+                        <div class="col-md-4"><img src="img/house-4.jpg" ></div>
+                        <div class="col-md-4"><img src="img/house-4.jpg"></div>
+                        <div class="col-md-4"><img src="img/house-4.jpg" ></div>
+                        <div class="col-md-4"><img src="img/house-4.jpg" ></div>
+                        <div class="col-md-4"><img src="img/house-4.jpg" ></div>
                     </div>
                     <div class="container">
                         <div class="row ">
@@ -227,28 +238,28 @@
                 <div class="client-card-block">
                     <h5 class="card-title">Контакты</h5>
                     <hr>
-                    <div class="row" style="margin-bottom: 10px">
-                        <div class="col-md-4">
+                    <div class="row mb-1">
+                        <div class="col-xl-4">
                             <div class="text">
                                 ООО СК "ЛСС ДОМ":<br>
                                 г. Москва, Варшавское шоссе<br>
                                 дом 42, БЦ "На Варшавке", офис 2246
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xl-4">
                             <div class="">
                                 Телефоны: +7 (495) 201-88-78
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+7 (925) 514-07-16
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xl-4">
                             <div class="text">
-                                E-mail:  info@lssdom.ru<br><br>
+                                E-mail: info@lssdom.ru<br><br>
                                 Наша сайт: lssdom.ru
                             </div>
                         </div>
                     </div>
-                    <div class="container filters-container hidden-xs-down map">
+                    <div class="container filters-container hidden-xs-down map d-lg-block d-none">
                         <div class="">
                             <div class="row">
                                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b3b1dee0f065cfcccf89355ae00d3856c2df8f3984ad8bec80a266c1e01758f&amp;height=299&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -317,73 +328,174 @@
                 </div>
             </div>
 
-            <div class="sidebar-sale">
+            <div class="sidebar-sale d-none d-xl-block">
                 <img src="img/ruka.png">
             </div>
-            <div class="sidebar-sale">
+            <div class="sidebar-sale d-none d-xl-block">
                 <img src="img/ruka.png">
             </div>
-
-            <div class="card opinion">
-                <img class="card-img-top" src="img/telka.png">
-                <div class="client-card-header"> Мария Демянтьява <br><span class="sale-date">03 июля 2017г.</span></div>
-                <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                <div class="sale-card-body">
-                    <p class="card-text">О компании ООО СК ЛесСтройСервис - проектирование, строительство и отделка деревянных домов, бань,
-                        гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области.</p>
+            <div class="col-lg-12 no-padding">
+                <div class="card opinion py-2">
+                    <div class="col-xl-12 text-center">
+                        <div class="row">
+                            <div class=" col-xl-3 pb-1 ">
+                                <img class="img-fluid rounded-circle" src="img/photo1.png">
+                            </div>
+                            <div class="col-xl-5 text-xl-left no-padding">
+                                <div class="client-card-header"> Мария Демянтьява
+                                    <div class="">
+                                        <span class="sale-date">03 июля 2017г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <input name="input-name" type="hidden" class=" rating" min=1 max=5 step=1 data-size="sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="sale-card-body">
+                            <p class="line-height-1-1em">О компании tae, similique ut? Accusantium ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, similique ut? Accusantium aклееного бруса, профилированного бруса в Москве и Московской области.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card opinion">
-                <img class="card-img-top" src="img/telka.png">
-                <div class="client-card-header"> Мария Демянтьява <br><span class="sale-date">03 июля 2017г.</span></div>
-                <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                <div class="sale-card-body">
-                    <p class="card-text">О компании ООО СК ЛесСтройСервис - проектирование, строительство и отделка деревянных домов, бань,
-                        гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области.</p>
+            <div class="col-lg-12 no-padding">
+                <div class="card opinion py-2">
+                    <div class="col-xl-12 text-center">
+                        <div class="row">
+                            <div class=" col-xl-3 pb-1 ">
+                                <img class="img-fluid rounded-circle" src="img/photo1.png">
+                            </div>
+                            <div class="col-xl-5 text-xl-left no-padding">
+                                <div class="client-card-header"> Мария Демянтьява
+                                    <div class="">
+                                        <span class="sale-date">03 июля 2017г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <input name="input-name" type="hidden" class=" rating" min=1 max=5 step=1 data-size="sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="sale-card-body">
+                            <p class="line-height-1-1em">О компании LoremLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, simie, similique ut? Accusantium ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, similique ut? Accusantium aклееного бруса, профилированного бруса в Москве и Московской области.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card opinion">
-                <img class="card-img-top" src="img/telka.png">
-                <div class="client-card-header"> Мария Демянтьява <br><span class="sale-date">03 июля 2017г.</span></div>
-                <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                <div class="sale-card-body">
-                    <p class="card-text">О компании ООО СК ЛесСтройСервис - проектирование, строительство и отделка деревянных домов, бань,
-                        гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области.</p>
+            <div class="col-lg-12 no-padding">
+                <div class="card opinion py-2">
+                    <div class="col-xl-12 text-center">
+                        <div class="row">
+                            <div class=" col-xl-3 pb-1 ">
+                                <img class="img-fluid rounded-circle" src="img/photo1.png">
+                            </div>
+                            <div class="col-xl-5 text-xl-left no-padding">
+                                <div class="client-card-header"> Мария Демянтьява
+                                    <div class="">
+                                        <span class="sale-date">03 июля 2017г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <input name="input-name" type="hidden" class=" rating" min=1 max=5 step=1 data-size="sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="sale-card-body">
+                            <p class="line-height-1-1em">О компании ium aклееного бруса, профилированного бруса в Москве и Московской области.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card opinion">
-                <img class="card-img-top" src="img/telka.png">
-                <div class="client-card-header"> Мария Демянтьява <br><span class="sale-date">03 июля 2017г.</span></div>
-                <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                <div class="sale-card-body">
-                    <p class="card-text">О компании ООО СК ЛесСтройСервис - проектирование, строительство и отделка деревянных домов, бань,
-                        гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области.</p>
+            <div class="col-lg-12 no-padding">
+                <div class="card opinion py-2">
+                    <div class="col-xl-12 text-center">
+                        <div class="row">
+                            <div class=" col-xl-3 pb-1 ">
+                                <img class="img-fluid rounded-circle" src="img/photo1.png">
+                            </div>
+                            <div class="col-xl-5 text-xl-left no-padding">
+                                <div class="client-card-header"> Мария Демянтьява
+                                    <div class="">
+                                        <span class="sale-date">03 июля 2017г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <input name="input-name" type="hidden" class=" rating" min=1 max=5 step=1 data-size="sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="sale-card-body">
+                            <p class="line-height-1-1em">О компании LoremLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, similique ut? AccusantiumLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, similique ut? Accusantium ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, similique ut? Accusantium ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, similique ut? Accusantium ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae, similique ut? Accusantium aклееного бруса, профилированного бруса в Москве и Московской области.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card opinion">
-                <img class="card-img-top" src="img/telka.png">
-                <div class="client-card-header"> Мария Демянтьява <br><span class="sale-date">03 июля 2017г.</span></div>
-                <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                <div class="sale-card-body">
-                    <p class="card-text">О компании ООО СК ЛесСтройСервис - проектирование, строительство и отделка деревянных домов, бань,
-                        гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области.</p>
+            <div class="col-lg-12 no-padding">
+                <div class="card opinion py-2">
+                    <div class="col-xl-12 text-center">
+                        <div class="row">
+                            <div class=" col-xl-3 pb-1 ">
+                                <img class="img-fluid rounded-circle" src="img/photo1.png">
+                            </div>
+                            <div class="col-xl-5 text-xl-left no-padding">
+                                <div class="client-card-header"> Мария Демянтьява
+                                    <div class="">
+                                        <span class="sale-date">03 июля 2017г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <input name="input-name" type="hidden" class=" rating" min=1 max=5 step=1 data-size="sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="sale-card-body">
+                            <p class="line-height-1-1em">О компании LoremLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea eius inventore rem saepe. Beatae,Accusantium aклееного бруса, профилированного бруса в Москве и Московской области.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card opinion">
-                <img class="card-img-top" src="img/telka.png">
-                <div class="client-card-header"> Мария Демянтьява <br><span class="sale-date">03 июля 2017г.</span></div>
-                <input name="input-name" type="number" class="rating" min=1 max=5 step=1 data-size="sm">
-                <div class="sale-card-body">
-                    <p class="card-text">О компании ООО СК ЛесСтройСервис - проектирование, строительство и отделка деревянных домов, бань,
-                        гаражей из оцилиндрованного бревна, клееного бруса, профилированного бруса в Москве и Московской области.</p>
+            <div class="col-lg-12 no-padding">
+                <div class="card opinion py-2">
+                    <div class="col-xl-12 text-center">
+                        <div class="row">
+                            <div class=" col-xl-3 pb-1 ">
+                                <img class="img-fluid rounded-circle" src="img/photo1.png">
+                            </div>
+                            <div class="col-xl-5 text-xl-left no-padding">
+                                <div class="client-card-header"> Мария Демянтьява
+                                    <div class="">
+                                        <span class="sale-date">03 июля 2017г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <input name="input-name" type="hidden" class=" rating" min=1 max=5 step=1 data-size="sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="sale-card-body">
+                            <p class="line-height-1-1em">О компании ium aклееного бруса, профилированного бруса в Москве и Московской области.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-3 client-buttons">
-                    <input class="button" type="submit" value="Все отзывы">
+                <div class="col-xl-12 text-center ">
+                    <input class="button mb-4  w-100 py-1 py-xl-0" type="submit" value="Все отзывы">
                 </div>
             </div>
-            <div class="sidebar-sale" style="margin-top: 20px;">
+            <div class="sidebar-sale d-none d-xl-block mt-2">
                 <img src="img/ruka.png">
             </div>
 
@@ -396,15 +508,20 @@
 <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+
 <script src="js/star-rating.js"></script>
 <script src="themes/krajee-svg/theme.js"></script>
 <script src="js/locales/ru.js"></script>
 <script src="plugins/slick/slick/slick.min.js"></script>
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         $("#header").load("header.html");
         $("#footer").load("footer.html");
 
