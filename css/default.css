@@ -127,25 +127,25 @@ body {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px; }
 
-/* ╨и╨╕╤А╨╕╨╜╨░ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
+/* Ширина слайдера */
 #slider {
   width: 40%;
   background-color: #FFC702; }
 
-/* ╨Ъ╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
+/* Контейнер слайдера */
 .ui-slider {
   position: relative; }
 
-/* ╨Я╨╛╨╗╨╖╤Г╨╜╨╛╨║ */
+/* Ползунок */
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
   width: 14px;
-  /* ╨Ч╨░╨┤╨░╨╡╨╝ ╨╜╤Г╨╢╨╜╤Г╤О ╤И╨╕╤А╨╕╨╜╤Г */
+  /* Задаем нужную ширину */
   height: 14px;
-  /* ╨╕ ╨▓╤Л╤Б╨╛╤В╤Г */
+  /* и высоту */
   background: black;
-  /* ╨║╨░╤А╤В╨╕╨╜╨║╨░ ╨╕╨╖╨╛╨▒╤А╨░╨╢╨░╤О╤Й╨░╤П ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║. ╨Ш╨╗╨╕ ╨╝╨╛╨╢╨╜╨╛ ╨╖╨░╨╗╨╕╤В╤М ╤Ж╨▓╨╡╤В╨╛╨╝, ╨╖╨░╨┤╨░╤В╤М ╨▒╨╛╤А╨┤╤О╤А ╨╕ ╤Б╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╤П */
+  /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
   cursor: pointer; }
 
 .ui-slider .ui-slider-range {
@@ -156,12 +156,12 @@ body {
   border: 0;
   overflow: hidden; }
 
-/* ╨│╨╛╤А╨╕╨╖╨╛╨╜╤В╨░╨╗╤М╨╜╤Л╨╣ ╤Б╨╗╨░╨╣╨┤╨╡╤А (╤Б╨░╨╝╨░ ╨┐╨╛╨╗╨╛╤Б╨░ ╨┐╨╛ ╨║╨╛╤В╨╛╤А╨╛╨╣ ╨▒╨╡╨│╨░╨╡╤В ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║) */
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
   height: 5px;
-  /* ╨╖╨░╨┤╨░╨╡╨╝ ╨▓╤Л╤Б╨╛╤В╤Г ╤Б╨╛╨│╨╗╨░╤Б╨╜╨╛ ╨┤╨╕╨╖╨░╨╣╨╜╨░ */ }
+  /* задаем высоту согласно дизайна */ }
 
-/* ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╤Г╨╡╨╝ ╨┐╨╛╨╗╨╖╤Г╨╜╨║╨╕ */
+/* позиционируем ползунки */
 .ui-slider-horizontal .ui-slider-handle {
   top: -7px;
   margin-left: -6px; }
@@ -176,17 +176,17 @@ body {
 .ui-slider-horizontal .ui-slider-range-max {
   right: 0; }
 
-/* ╨╛╤Д╨╛╤А╨╝╨╗╨╡╨╜╨╕╨╡ ╨┐╨╛╨╗╨╛╤Б╤Л ╨┐╨╛ ╨║╨╛╤В╨╛╤А╨╛╨╣ ╤Е╨╛╨┤╨╕╤В ╨┐╨╛╨╗╨╖╤Г╨╜╨╛╨║ */
+/* оформление полосы по которой ходит ползунок */
 .ui-widget-content {
   border: 2px solid #FFF;
   background: #FFF; }
 
-/* ╨╛╤Д╨╛╤А╨╝╨╗╨╡╨╜╨╕╨╡ ╨░╨║╤В╨╕╨▓╨╜╨╛╨│╨╛ ╤Г╤З╨░╤Б╤В╨║╨░ (╨╝╨╡╨╢╨┤╤Г ╨┤╨▓╤Г╨╝╤П ╨┐╨╛╨╗╨╖╤Г╨╜╨║╨░╨╝╨╕) */
+/* оформление активного участка (между двумя ползунками) */
 .ui-widget-header {
   border: 1px solid #FFF;
   background: #FFF; }
 
-/* ╤Б╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╨╡ ╨┤╨╗╤П ╨┐╨╛╨╗╨╛╤Б╤Л ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░ */
+/* скругление для полосы слайдера */
 .ui-corner-all {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -246,8 +246,7 @@ body {
   padding-left: 10px; }
 
 .card-title {
-  padding-left: 10px;
-  font-weight: 400; }
+  font-weight: 500; }
   @media (min-width: 300px) and (max-width: 1200px) {
     .card-title {
       text-align: center; } }
@@ -271,7 +270,8 @@ hr {
     background-color: #575757; }
   @media (min-width: 300px) and (max-width: 1200px) {
     .comment {
-      padding: 1.20rem 5rem; } }
+      padding: 1.20rem 5rem;
+      font-size: 1.2rem; } }
 
 @media (min-width: 300px) and (max-width: 1200px) {
   .btn-post-review {
@@ -298,8 +298,6 @@ hr {
 
 .card {
   margin-bottom: 1.25em; }
-  .card img {
-    width: 100%; }
 
 @media (min-width: 1200px) {
   .my-card-footer {
@@ -462,7 +460,7 @@ hr.gray {
 
 @media (min-width: 300px) and (max-width: 1200px) {
   .opinion img {
-    width: 50%; } }
+    width: 25%; } }
 
 .sidebar-sale {
   margin-bottom: 15px;
@@ -921,7 +919,7 @@ hr.orange {
       height: 27px;
       float: none; } }
 
-/*╨Э╨░╤Б╤В╨╛╨╛╨╣╨║╨░  ╤А╨░╨╖╨╝╨╡╤А╨╛╨▓ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░*/
+/*Настоойка  размеров слайдера*/
 .slider-img-array img {
   margin-top: 11px; }
   @media (min-width: 1200px) {
@@ -930,19 +928,27 @@ hr.orange {
       height: 78px;
       margin-top: 11px; } }
 
-@media (min-width: 300px) and (max-width: 1200px) {
-  .slider-img-array {
-    max-width: 100%;
-    flex: 0 0 100%; } }
-
-.slider-img-main {
-  padding: 0 0 0 14px; }
+.slider-img-array {
+  padding-top: 9px; }
+  .slider-img-array img {
+    max-width: 100%; }
   @media (min-width: 300px) and (max-width: 1200px) {
-    .slider-img-main {
-      display: none; } }
-  @media (min-width: 992px) {
-    .slider-img-main {
-      margin: auto; } }
+    .slider-img-array {
+      max-width: 100%;
+      flex: 0 0 100%; }
+      .slider-img-array .slick-prev {
+        padding-right: 14px; } }
+
+.slider-img-main .slick-track > div {
+  padding-left: 8px; }
+.slider-img-main img {
+  max-width: 100%; }
+@media (min-width: 300px) and (max-width: 1200px) {
+  .slider-img-main {
+    display: none; } }
+@media (min-width: 992px) {
+  .slider-img-main {
+    margin: auto; } }
 
 @media (min-width: 300px) and (max-width: 1200px) {
   .slick-list {
@@ -952,7 +958,7 @@ hr.orange {
   .client-buttons {
     text-align: center; } }
 
-/*╨Э╨░╤Б╤В╤А╨╛╨╣╨║╨╕ ╨║╨╜╨┐╨║╨╕ ╤Б╨╗╨░╨╣╨┤╨╡╤А╨░*/
+/*Настройки кнпки слайдера*/
 @media (min-width: 300px) and (max-width: 1200px) {
   .slick-prev,
   .slick-next {
@@ -1081,9 +1087,9 @@ hr.orange {
   position: absolute;
   z-index: 2;
   width: 14px;
-  /* ╨Ч╨░╨┤╨░╨╡╨╝ ╨╜╤Г╨╢╨╜╤Г╤О ╤И╨╕╤А╨╕╨╜╤Г */
+  /* Задаем нужную ширину */
   height: 14px;
-  /* ╨╕ ╨▓╤Л╤Б╨╛╤В╤Г */
+  /* и высоту */
   border: none;
   cursor: pointer; }
 
@@ -1098,18 +1104,22 @@ hr.orange {
 .suka-input-perenesi-text::-webkit-input-placeholder {
   white-space: normal; }
 
-/*╨╝╨╡╤Б╤В╨╛ ╤А╨░╤Б╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨а╨╡╨╣╤В╨╕╨╜╨│╨░ (╨Ч╨▓╤С╨╖╨┤)*/
+/*место расположение Рейтинга (Звёзд)*/
 @media (min-width: 300px) and (max-width: 1200px) {
   .rating-sm {
     float: none !important; } }
 
-@media (min-width: 300px) and (max-width: 1200px) {
-  .fivestar {
-    text-align: center;
-    margin: 10px 0; } }
+/*Карточка клиента - слайдер*/
+.multiple-items .slick-track > div {
+  padding: 0 10px; }
+  .multiple-items .slick-track > div img {
+    max-width: 100%; }
 
-/*╨а╨░╨╖╨╝╨╡╤А╤Л ╨╖╨▓╤С╨╖╨┤*/
+/*Размеры звёзд*/
 .rating-stars .star .glyphicon {
-  font-size: 1.8em; }
+  font-size: 1.5em; }
+  @media (min-width: 300px) and (max-width: 1200px) {
+    .rating-stars .star .glyphicon {
+      font-size: 1.8em; } }
 
 /*# sourceMappingURL=default.css.map */

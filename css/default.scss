@@ -322,8 +322,8 @@ body {
 }
 
 .card-title {
-  padding-left: 10px;
-  font-weight: 400;
+  //padding-left: 10px;
+  font-weight: 500;
   @include break($xs, $xl) {
     text-align: center;
   }
@@ -355,6 +355,7 @@ hr {
   padding: 0.5rem;
   @include break($xs, $xl) {
     padding: 1.20rem 5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -392,7 +393,7 @@ hr {
 .card {
   margin-bottom: 1.25em;
   & img {
-    width: 100%;
+    //width: 100%;
   }
 }
 
@@ -609,7 +610,7 @@ hr.gray {
 .opinion {
   & img {
     @include break($xs, $xl) {
-      width: 50%;
+      width: 25%;
     }
   }
 }
@@ -1216,15 +1217,28 @@ hr.orange {
 }
 
 .slider-img-array {
+  padding-top: 9px;
+  & img {
+    max-width: 100%;
+  }
   @include break($xs, $xl) {
     max-width: 100%;
     flex: 0 0 100%;
+    & .slick-prev {
+      padding-right: 14px;
+    }
 
   }
 }
 
 .slider-img-main {
-  padding: 0 0 0 14px;
+  & .slick-track>div {
+    padding-left: 8px;
+  }
+  //padding: 0 0 0 10px;
+  & img {
+    max-width: 100%;
+  }
   @include break($xs, $xl) {
     display: none;
   }
@@ -1487,11 +1501,15 @@ hr.orange {
   }
 }
 
-.fivestar {
-  @include break($xs, $xl) {
-    text-align: center;
-    margin: 10px 0;
+/*Карточка клиента - слайдер*/
+.multiple-items {
+  & .slick-track>div {
+    padding: 0 10px;
+    & img {
+      max-width: 100%;
+    }
   }
+
 }
 
 
@@ -1500,7 +1518,10 @@ hr.orange {
 .rating-stars {
   & .star {
     & .glyphicon {
-      font-size: 1.8em;
+      font-size: 1.5em;
+      @include break($xs, $xl){
+        font-size: 1.8em;
+      }
     }
   }
 }
