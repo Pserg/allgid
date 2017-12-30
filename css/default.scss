@@ -97,11 +97,11 @@ body {
 /*BUTTON*/
 .find-tender-button {
   background-color: $primary-color;
-  color: #3A3A3A;
+  color: $main-color;
 }
 
 .tender-button {
-  background-color: #3A3A3A;
+  background-color: $main-color;
   color: #dedbe2;
 }
 
@@ -158,7 +158,7 @@ body {
 }
 
 .search-mid {
-  background-color: #3A3A3A;
+  background-color: $main-color;
   color: $primary-color;
   border: none;
   font-size: 1.2em;
@@ -193,8 +193,8 @@ body {
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
-  width: 14px; /* Задаем нужную ширину */
-  height: 14px; /* и высоту */
+  width: 14px;
+  height: 14px;
   background: black; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
   cursor: pointer
 }
@@ -210,7 +210,7 @@ body {
 
 /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
-  height: 5px; /* задаем высоту согласно дизайна */
+  height: 5px;
 }
 
 /* позиционируем ползунки */
@@ -344,7 +344,7 @@ hr {
 }
 
 .comment {
-  background-color: #3A3A3A;
+  background-color: $main-color;
   color: $primary-color;
   border-radius: 3px;
   &:hover {
@@ -555,7 +555,7 @@ ol li {
 
 .card-block-right {
   padding: 1.25em;
-  background-color: #3A3A3A;
+  background-color: $main-color;
   color: $secondary-color;
   & span {
     color: #FFC702;
@@ -659,7 +659,7 @@ hr.gray {
 }
 
 .my-card-block-article {
-  padding: 10px 1.25em 10px 1.25em;
+  padding: 10px 1.25em;
 }
 
 /////////////Доска-обьявлений//////////////
@@ -815,7 +815,7 @@ hr.black {
 }
 
 .search-button {
-  background-color: #3A3A3A;
+  background-color: $main-color;
   color: #FFC702;
   border: none;
   @include break($xl) {
@@ -1074,7 +1074,7 @@ hr.black {
 
 .find-tender {
   & nav {
-    background-color: #3A3A3A;
+    background-color: $main-color;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
   }
@@ -1086,7 +1086,7 @@ hr.black {
   margin-right: 5px;
   font-size: 16px;
   border: 0;
-  background-color: #3A3A3A;
+  background-color: $main-color;
   font-weight: 400;
   width: 83px;
   color: white;
@@ -1095,7 +1095,7 @@ hr.black {
 .maxCostTender {
   font-size: 16px;
   border: 0;
-  background-color: #3A3A3A;
+  background-color: $main-color;
   font-weight: 400;
   width: 83px;
   color: white;
@@ -1343,11 +1343,11 @@ hr.orange {
   border-radius: 3px;
   &.top {
     background-color: #FFC702;
-    color: #3A3A3A;
+    color: $main-color;
     margin-top: 3px;
   }
   &.bot {
-    background-color: #3A3A3A;
+    background-color: $main-color;
     color: $primary-color;
   }
 }
@@ -1367,7 +1367,7 @@ hr.orange {
 }
 
 .tender-card-right {
-  background-color: #3A3A3A;
+  background-color: $main-color;
   //height: 209px;
   color: white;
 
@@ -1512,8 +1512,6 @@ hr.orange {
 
 }
 
-
-
 /*Размеры звёзд*/
 .rating-stars {
   & .star {
@@ -1525,5 +1523,3 @@ hr.orange {
     }
   }
 }
-
-
